@@ -1,0 +1,48 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$metadata": {
+    "name": "QIPUZ Spacing Tokens",
+    "version": "2.0.0",
+    "updated": "2026-06-01",
+    "reference": "DESIGN_SYSTEM/Spacing.md"
+  },
+  "spacing": {
+    "0": { "$value": "0px", "$type": "spacing" },
+    "1": { "$value": "4px", "$type": "spacing", "$description": "0.5 base units — micro spacing" },
+    "2": { "$value": "8px", "$type": "spacing", "$description": "1 base unit — tight spacing" },
+    "3": { "$value": "12px", "$type": "spacing", "$description": "1.5 base units" },
+    "4": { "$value": "16px", "$type": "spacing", "$description": "2 base units — default component padding" },
+    "5": { "$value": "20px", "$type": "spacing", "$description": "2.5 base units" },
+    "6": { "$value": "24px", "$type": "spacing", "$description": "3 base units — standard section padding" },
+    "8": { "$value": "32px", "$type": "spacing", "$description": "4 base units — comfortable spacing" },
+    "10": { "$value": "40px", "$type": "spacing", "$description": "5 base units" },
+    "12": { "$value": "48px", "$type": "spacing", "$description": "6 base units — section spacing" },
+    "16": { "$value": "64px", "$type": "spacing", "$description": "8 base units — generous section spacing" },
+    "20": { "$value": "80px", "$type": "spacing", "$description": "10 base units — page section padding" },
+    "24": { "$value": "96px", "$type": "spacing", "$description": "12 base units — large section spacing" },
+    "32": { "$value": "128px", "$type": "spacing", "$description": "16 base units — hero section padding" },
+    "40": { "$value": "160px", "$type": "spacing", "$description": "20 base units — maximum section padding" }
+  },
+  "layout": {
+    "content-max-width": {
+      "$value": "1200px",
+      "$type": "dimension",
+      "$description": "Maximum content width for all page layouts."
+    },
+    "content-padding-desktop": {
+      "$value": "80px",
+      "$type": "dimension",
+      "$description": "Horizontal padding on large screens."
+    },
+    "content-padding-tablet": {
+      "$value": "40px",
+      "$type": "dimension",
+      "$description": "Horizontal padding on tablet screens."
+    },
+    "content-padding-mobile": {
+      "$value": "20px",
+      "$type": "dimension",
+      "$description": "Horizontal padding on mobile screens."
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$metadata": {
+    "name": "QIPUZ Motion Tokens",
+    "version": "2.0.0",
+    "updated": "2026-06-01",
+    "reference": "BRAND_BOOK/Motion_Identity.md"
+  },
+  "motion": {
+    "duration": {
+      "instant": { "$value": "80ms", "$type": "duration", "$description": "Immediate feedback: hover, active states" },
+      "fast": { "$value": "160ms", "$type": "duration", "$description": "Small UI transitions: tooltips, badges" },
+      "base": { "$value": "240ms", "$type": "duration", "$description": "Standard transitions: modals, panels" },
+      "slow": { "$value": "400ms", "$type": "duration", "$description": "Page transitions, section reveals" },
+      "narrative-short": { "$value": "600ms", "$type": "duration", "$description": "Short brand animations" },
+      "narrative-base": { "$value": "900ms", "$type": "duration", "$description": "Standard brand animations" },
+      "narrative-long": { "$value": "1200ms", "$type": "duration", "$description": "Full Origin Node sequences" }
+    },
+    "easing": {
+      "standard": {
+        "$value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "$type": "cubicBezier",
+        "$description": "Default for most UI transitions"
+      },
+      "enter": {
+        "$value": "cubic-bezier(0, 0, 0.2, 1)",
+        "$type": "cubicBezier",
+        "$description": "Elements entering the screen"
+      },
+      "exit": {
+        "$value": "cubic-bezier(0.4, 0, 1, 1)",
+        "$type": "cubicBezier",
+        "$description": "Elements leaving the screen"
+      },
+      "emphasis": {
+        "$value": "cubic-bezier(0.2, 0, 0, 1)",
+        "$type": "cubicBezier",
+        "$description": "Brand moments and emphasis animations"
+      }
+    },
+    "origin-node": {
+      "state-1-origin-duration": { "$value": "400ms", "$type": "duration" },
+      "state-1-origin-easing": { "$value": "cubic-bezier(0, 0, 0.2, 1)", "$type": "cubicBezier" },
+      "state-2-pulse-duration": { "$value": "1200ms", "$type": "duration" },
+      "state-2-pulse-iterations": { "$value": 3, "$type": "number" },
+      "state-2-pulse-delay": { "$value": "400ms", "$type": "duration" },
+      "state-3-connection-base-duration": { "$value": "750ms", "$type": "duration" },
+      "state-3-connection-stagger": { "$value": "150ms", "$type": "duration" },
+      "state-4-collapse-duration": { "$value": "500ms", "$type": "duration" },
+      "state-5-essence-duration": { "$value": "600ms", "$type": "duration" }
+    }
+  }
+}

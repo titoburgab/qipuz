@@ -1,0 +1,16 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$metadata": {
+    "name": "QIPUZ Radius Tokens",
+    "version": "2.0.0",
+    "updated": "2026-06-01"
+  },
+  "radius": {
+    "none": { "$value": "0px", "$type": "borderRadius", "$description": "No rounding — sharp geometric elements" },
+    "sm": { "$value": "4px", "$type": "borderRadius", "$description": "Subtle rounding for tags and badges" },
+    "md": { "$value": "8px", "$type": "borderRadius", "$description": "Default card and panel rounding" },
+    "lg": { "$value": "12px", "$type": "borderRadius", "$description": "Modal and overlay rounding" },
+    "xl": { "$value": "16px", "$type": "borderRadius", "$description": "Large card rounding" },
+    "full": { "$value": "9999px", "$type": "borderRadius", "$description": "Pills and circular elements" }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$metadata": {
+    "name": "QIPUZ Color Tokens",
+    "version": "2.0.0",
+    "updated": "2026-06-01",
+    "reference": "BRAND_BOOK/Color_System.md"
+  },
+  "color": {
+    "primary": {
+      "obsidian": {
+        "$value": "#0A0A0A",
+        "$type": "color",
+        "$description": "Primary dark background and text on light backgrounds. RGB: 10, 10, 10."
+      },
+      "ivory": {
+        "$value": "#F5F5F2",
+        "$type": "color",
+        "$description": "Primary light background and text on dark backgrounds. Official value — do not substitute #FFFFFF. See Decision_Log DECISION-001."
+      },
+      "signal-red": {
+        "$value": "#FF3B30",
+        "$type": "color",
+        "$description": "Brand accent. Origin Node, CTAs, active states. Do not use for body text below 24px."
+      }
+    },
+    "motion": {
+      "copper": {
+        "$value": "#FF7A00",
+        "$type": "color",
+        "$description": "Motion palette only. Warm energy, mid-range data emphasis."
+      },
+      "amber": {
+        "$value": "#FFB800",
+        "$type": "color",
+        "$description": "Motion palette only. Transition, connection-in-progress states."
+      },
+      "orange": {
+        "$value": "#FF4000",
+        "$type": "color",
+        "$description": "Motion palette only. High energy, directional flow."
+      },
+      "gold": {
+        "$value": "#FFD166",
+        "$type": "color",
+        "$description": "Motion palette only. Resolution, completion states."
+      },
+      "plasma": {
+        "$value": "#FF2D55",
+        "$type": "color",
+        "$description": "Motion palette only. Bridge between Signal Red and warm motion palette. See Decision_Log DECISION-004."
+      }
+    },
+    "neutral": {
+      "obsidian-80": {
+        "$value": "#1A1A1A",
+        "$type": "color",
+        "$description": "Card backgrounds in dark mode."
+      },
+      "obsidian-60": {
+        "$value": "#2A2A2A",
+        "$type": "color",
+        "$description": "Borders and dividers in dark mode."
+      },
+      "obsidian-40": {
+        "$value": "#555555",
+        "$type": "color",
+        "$description": "Subdued text, placeholders."
+      },
+      "ivory-80": {
+        "$value": "#E8E8E5",
+        "$type": "color",
+        "$description": "Borders and dividers in light mode."
+      },
+      "ivory-60": {
+        "$value": "#DDDDD9",
+        "$type": "color",
+        "$description": "Subtle section backgrounds within light contexts."
+      }
+    },
+    "semantic": {
+      "background-primary-dark": {
+        "$value": "{color.primary.obsidian}",
+        "$type": "color",
+        "$description": "Primary dark background."
+      },
+      "background-primary-light": {
+        "$value": "{color.primary.ivory}",
+        "$type": "color",
+        "$description": "Primary light background."
+      },
+      "text-primary-on-dark": {
+        "$value": "{color.primary.ivory}",
+        "$type": "color",
+        "$description": "Primary text on dark backgrounds."
+      },
+      "text-primary-on-light": {
+        "$value": "{color.primary.obsidian}",
+        "$type": "color",
+        "$description": "Primary text on light backgrounds."
+      },
+      "accent": {
+        "$value": "{color.primary.signal-red}",
+        "$type": "color",
+        "$description": "Brand accent. Use for CTAs, highlights, active states."
+      },
+      "border-dark": {
+        "$value": "{color.neutral.obsidian-60}",
+        "$type": "color",
+        "$description": "Border color for dark-mode components."
+      },
+      "border-light": {
+        "$value": "{color.neutral.ivory-80}",
+        "$type": "color",
+        "$description": "Border color for light-mode components."
+      }
+    }
+  }
+}
