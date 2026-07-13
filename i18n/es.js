@@ -27,7 +27,7 @@ window.i18nStrings.es = {
   hero: {
     eyebrow:     'Inteligencia conectada',
     headline:    'La mayoría de las organizaciones no tienen un problema de <span class="font-bold text-signal">IA</span>. Tienen un problema de complejidad.',
-    body:        'La IA es la forma en que lo resolvemos. Construimos agentes de IA, automatizaciones de procesos y sistemas inteligentes diseñados para la forma en que tu organización realmente opera.',
+    body:        'La IA es cómo se resuelve el problema y cómo esa solución se convierte en ingresos, diseñada como agentes, automatizaciones de procesos y sistemas inteligentes construidos para la forma en que tu organización realmente opera.',
     ctaPrimary:  'Agenda tu sesión inicial',
     ctaSecondary:'Ver nuestro trabajo',
   },

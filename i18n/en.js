@@ -28,7 +28,7 @@ window.i18nStrings.en = {
   hero: {
     eyebrow:    'Connecting Intelligence',
     headline:   'Most organizations don\'t have an <span class="font-bold text-signal">AI</span> problem.<br>They have a complexity problem.',
-    body:       'AI is how we solve it. We engineer AI agents, workflow automations, and intelligent systems built around how your organization actually works.',
+    body:       'AI is how the problem gets solved and how that solution turns into revenue, engineered as agents, workflow automations, and intelligent systems built around how your organization actually works.',
     ctaPrimary:  'Book a Discovery Session',
     ctaSecondary:'See Our Work',
   },
