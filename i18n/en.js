@@ -156,6 +156,7 @@ window.i18nStrings.en = {
       system:      'System',
       description: 'What It Does',
     },
+    cardCta: 'View details',
     framing: {
       eyebrow: 'How to Read This',
       heading: 'Pain point. System. What it does.',
@@ -166,6 +167,20 @@ window.i18nStrings.en = {
       painPoint:   'Law firms, real estate teams, and small businesses lose hours triaging inbound leads by hand, reading intake forms one at a time and guessing which ones are worth a callback.',
       system:      'An AI intake agent that reads the information a prospect submits, asks a clarifying question where the submission is incomplete, and scores the lead against criteria the business sets.',
       description: 'The agent qualifies each lead as it arrives, tags it ready, borderline, or not a fit, and hands the team a structured summary instead of a raw form submission.',
+      modal: {
+        painPoint: {
+          headline: 'Qualifying leads shouldn\'t be the job that eats your day.',
+          body: '<p>Law firms, real estate agents, and growing businesses all hit the same wall: leads come in fast, but figuring out which ones are worth pursuing takes time nobody has. Someone has to read every inquiry, cross-check details, weigh intent against fit, and decide who gets a callback today versus who waits, or gets missed entirely.</p><p>That manual triage becomes a bottleneck. High-value leads sit in a queue behind low-value ones. Follow-up slows down. And the busier the business gets, the worse the problem becomes.</p>',
+        },
+        system: {
+          headline: 'An automated Lead Qualifier workflow that does the thinking for you.',
+          body: '<p>Instead of a person manually sorting through every submission, the system takes the lead\'s information the moment it comes in, contact details, needs, budget, timeline, or case specifics, and runs it through a structured scoring model built around what actually makes a lead worth pursuing.</p><p>No spreadsheets. No manual review queue. No guesswork about who to call first.</p>',
+        },
+        description: {
+          headline: 'Fill in the lead\'s information, and the workflow takes it from there.',
+          body: '<p>It analyzes the details against a defined set of qualifying criteria: intent, budget, urgency, fit, and returns a clear score. High-scoring leads surface immediately as priorities. Lower-scoring ones are flagged for nurture or follow-up later.</p><p>The result: faster response times, no lead falling through the cracks, and a team that spends its time closing instead of sorting.</p>',
+        },
+      },
     },
     project2: {
       title:       'Quote & Invoice Generator',

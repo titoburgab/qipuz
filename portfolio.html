@@ -156,6 +156,7 @@
     transition: transform 400ms cubic-bezier(0.2,0,0,1), box-shadow 400ms cubic-bezier(0.2,0,0,1), border-color 400ms cubic-bezier(0.2,0,0,1);
   }
   .service-card:hover { transform: translateY(-4px); }
+  .service-card:active { transform: translateY(-1px); }
   .service-icon { transition: color 240ms cubic-bezier(0.4,0,0.2,1); }
   .service-card:hover .service-icon { color: #FF3B30; }
   .service-title { transition: color 240ms cubic-bezier(0.4,0,0.2,1); }
@@ -314,7 +315,8 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
 
         <!-- 01 Lead Qualifier -->
-        <article class="reveal service-card lg:col-span-6 bg-ivory border border-ivory-80 rounded-lg shadow-card hover:shadow-card-hover overflow-hidden">
+        <article class="reveal service-card relative lg:col-span-6 bg-ivory border border-ivory-80 rounded-lg shadow-card hover:shadow-card-hover overflow-hidden">
+          <button type="button" class="absolute inset-0 z-10 rounded-lg" aria-labelledby="card-title-1" data-modal-target="1"></button>
           <div class="relative aspect-[16/10] bg-obsidian-80" aria-hidden="true">
             <img src="https://placehold.co/800x500/1A1A1A/F5F5F2?text=Lead+Qualifier" alt="" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
             <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/0 to-transparent"></div>
@@ -328,7 +330,7 @@
               </svg>
               <span class="font-mono text-label text-obsidian-40">01</span>
             </div>
-            <h3 class="service-title font-display text-heading-md font-medium text-obsidian" data-i18n="portfolio.project1.title">Lead Qualifier</h3>
+            <h3 id="card-title-1" class="service-title font-display text-heading-md font-medium text-obsidian" data-i18n="portfolio.project1.title">Lead Qualifier</h3>
 
             <p class="font-mono text-label uppercase tracking-[0.12em] text-obsidian-40 mt-6" data-i18n="portfolio.labels.painPoint">Pain Point</p>
             <p class="mt-1.5 text-body-sm" style="color:#3a3a3a;" data-i18n="portfolio.project1.painPoint">Law firms, real estate teams, and small businesses lose hours triaging inbound leads by hand, reading intake forms one at a time and guessing which ones are worth a callback.</p>
@@ -338,11 +340,17 @@
 
             <p class="font-mono text-label uppercase tracking-[0.12em] text-obsidian-40 mt-4" data-i18n="portfolio.labels.description">What It Does</p>
             <p class="mt-1.5 text-body-sm" style="color:#3a3a3a;" data-i18n="portfolio.project1.description">The agent qualifies each lead as it arrives, tags it ready, borderline, or not a fit, and hands the team a structured summary instead of a raw form submission.</p>
+
+            <p class="service-title mt-6 inline-flex items-center gap-1.5 text-body-sm font-medium text-obsidian" aria-hidden="true">
+              <span data-i18n="portfolio.cardCta">View details</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </p>
           </div>
         </article>
 
         <!-- 02 Quote & Invoice Generator -->
-        <article class="reveal service-card lg:col-span-6 bg-ivory border border-ivory-80 rounded-lg shadow-card hover:shadow-card-hover overflow-hidden">
+        <article class="reveal service-card relative lg:col-span-6 bg-ivory border border-ivory-80 rounded-lg shadow-card hover:shadow-card-hover overflow-hidden">
+          <button type="button" class="absolute inset-0 z-10 rounded-lg" aria-labelledby="card-title-2" data-modal-target="2"></button>
           <div class="relative aspect-[16/10] bg-obsidian-80" aria-hidden="true">
             <img src="https://placehold.co/800x500/1A1A1A/F5F5F2?text=Quote+%26+Invoice" alt="" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
             <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/0 to-transparent"></div>
@@ -358,7 +366,7 @@
               </svg>
               <span class="font-mono text-label text-obsidian-40">02</span>
             </div>
-            <h3 class="service-title font-display text-heading-md font-medium text-obsidian" data-i18n="portfolio.project2.title">Quote &amp; Invoice Generator</h3>
+            <h3 id="card-title-2" class="service-title font-display text-heading-md font-medium text-obsidian" data-i18n="portfolio.project2.title">Quote &amp; Invoice Generator</h3>
 
             <p class="font-mono text-label uppercase tracking-[0.12em] text-obsidian-40 mt-6" data-i18n="portfolio.labels.painPoint">Pain Point</p>
             <p class="mt-1.5 text-body-sm" style="color:#3a3a3a;" data-i18n="portfolio.project2.painPoint">Putting together a quote or invoice for every new request means re-typing the same line items, pricing, and terms by hand, and one wrong number holds up payment.</p>
@@ -368,11 +376,17 @@
 
             <p class="font-mono text-label uppercase tracking-[0.12em] text-obsidian-40 mt-4" data-i18n="portfolio.labels.description">What It Does</p>
             <p class="mt-1.5 text-body-sm" style="color:#3a3a3a;" data-i18n="portfolio.project2.description">Fill in the line items once. The workflow builds the document, applies the right pricing and terms, and sends it straight to the client.</p>
+
+            <p class="service-title mt-6 inline-flex items-center gap-1.5 text-body-sm font-medium text-obsidian" aria-hidden="true">
+              <span data-i18n="portfolio.cardCta">View details</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </p>
           </div>
         </article>
 
         <!-- 03 Real Estate Video Generator -->
-        <article class="reveal service-card lg:col-span-6 bg-ivory border border-ivory-80 rounded-lg shadow-card hover:shadow-card-hover overflow-hidden">
+        <article class="reveal service-card relative lg:col-span-6 bg-ivory border border-ivory-80 rounded-lg shadow-card hover:shadow-card-hover overflow-hidden">
+          <button type="button" class="absolute inset-0 z-10 rounded-lg" aria-labelledby="card-title-3" data-modal-target="3"></button>
           <div class="relative aspect-[16/10] bg-obsidian-80" aria-hidden="true">
             <img src="https://placehold.co/800x500/1A1A1A/F5F5F2?text=Real+Estate+Video" alt="" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
             <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/0 to-transparent"></div>
@@ -387,7 +401,7 @@
               </svg>
               <span class="font-mono text-label text-obsidian-40">03</span>
             </div>
-            <h3 class="service-title font-display text-heading-md font-medium text-obsidian" data-i18n="portfolio.project3.title">Real Estate Video Generator</h3>
+            <h3 id="card-title-3" class="service-title font-display text-heading-md font-medium text-obsidian" data-i18n="portfolio.project3.title">Real Estate Video Generator</h3>
 
             <p class="font-mono text-label uppercase tracking-[0.12em] text-obsidian-40 mt-6" data-i18n="portfolio.labels.painPoint">Pain Point</p>
             <p class="mt-1.5 text-body-sm" style="color:#3a3a3a;" data-i18n="portfolio.project3.painPoint">Listing agents either pay for a video crew on every property or skip video entirely, because coordinating a shoot for each new listing costs more time and money than most listings justify.</p>
@@ -397,11 +411,17 @@
 
             <p class="font-mono text-label uppercase tracking-[0.12em] text-obsidian-40 mt-4" data-i18n="portfolio.labels.description">What It Does</p>
             <p class="mt-1.5 text-body-sm" style="color:#3a3a3a;" data-i18n="portfolio.project3.description">The agent fills in the property details and uploads photos once. The workflow paces the shots, adds the property information, and returns a finished video ready to download.</p>
+
+            <p class="service-title mt-6 inline-flex items-center gap-1.5 text-body-sm font-medium text-obsidian" aria-hidden="true">
+              <span data-i18n="portfolio.cardCta">View details</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </p>
           </div>
         </article>
 
         <!-- 04 Script Generator -->
-        <article class="reveal service-card lg:col-span-6 bg-ivory border border-ivory-80 rounded-lg shadow-card hover:shadow-card-hover overflow-hidden">
+        <article class="reveal service-card relative lg:col-span-6 bg-ivory border border-ivory-80 rounded-lg shadow-card hover:shadow-card-hover overflow-hidden">
+          <button type="button" class="absolute inset-0 z-10 rounded-lg" aria-labelledby="card-title-4" data-modal-target="4"></button>
           <div class="relative aspect-[16/10] bg-obsidian-80" aria-hidden="true">
             <img src="https://placehold.co/800x500/1A1A1A/F5F5F2?text=Script+Generator" alt="" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
             <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/0 to-transparent"></div>
@@ -417,7 +437,7 @@
               </svg>
               <span class="font-mono text-label text-obsidian-40">04</span>
             </div>
-            <h3 class="service-title font-display text-heading-md font-medium text-obsidian" data-i18n="portfolio.project4.title">Script Generator</h3>
+            <h3 id="card-title-4" class="service-title font-display text-heading-md font-medium text-obsidian" data-i18n="portfolio.project4.title">Script Generator</h3>
 
             <p class="font-mono text-label uppercase tracking-[0.12em] text-obsidian-40 mt-6" data-i18n="portfolio.labels.painPoint">Pain Point</p>
             <p class="mt-1.5 text-body-sm" style="color:#3a3a3a;" data-i18n="portfolio.project4.painPoint">Producing a script for TV, radio, and social media means writing the same story three separate times, in whatever format each platform expects, sometimes in two languages.</p>
@@ -427,11 +447,17 @@
 
             <p class="font-mono text-label uppercase tracking-[0.12em] text-obsidian-40 mt-4" data-i18n="portfolio.labels.description">What It Does</p>
             <p class="mt-1.5 text-body-sm" style="color:#3a3a3a;" data-i18n="portfolio.project4.description">Enter the topic once and choose the formats needed. The workflow returns one script per format, ready to record or post.</p>
+
+            <p class="service-title mt-6 inline-flex items-center gap-1.5 text-body-sm font-medium text-obsidian" aria-hidden="true">
+              <span data-i18n="portfolio.cardCta">View details</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </p>
           </div>
         </article>
 
         <!-- 05 LinkedIn Post Generator (full-width closer) -->
-        <article class="reveal service-card lg:col-span-12 bg-ivory border border-ivory-80 rounded-lg shadow-card hover:shadow-card-hover overflow-hidden">
+        <article class="reveal service-card relative lg:col-span-12 bg-ivory border border-ivory-80 rounded-lg shadow-card hover:shadow-card-hover overflow-hidden">
+          <button type="button" class="absolute inset-0 z-10 rounded-lg" aria-labelledby="card-title-5" data-modal-target="5"></button>
           <div class="relative aspect-[21/9] bg-obsidian-80" aria-hidden="true">
             <img src="https://placehold.co/1600x686/1A1A1A/F5F5F2?text=LinkedIn+Post+Generator" alt="" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
             <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/0 to-transparent"></div>
@@ -448,7 +474,11 @@
                 </svg>
                 <span class="font-mono text-label text-obsidian-40">05</span>
               </div>
-              <h3 class="service-title font-display text-heading-md font-medium text-obsidian mt-4" data-i18n="portfolio.project5.title">LinkedIn Post Generator</h3>
+              <h3 id="card-title-5" class="service-title font-display text-heading-md font-medium text-obsidian mt-4" data-i18n="portfolio.project5.title">LinkedIn Post Generator</h3>
+              <p class="service-title mt-4 inline-flex items-center gap-1.5 text-body-sm font-medium text-obsidian" aria-hidden="true">
+                <span data-i18n="portfolio.cardCta">View details</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </p>
             </div>
 
             <div class="md:col-span-8 grid sm:grid-cols-3 gap-6">
@@ -528,6 +558,162 @@
   </div>
 </footer>
 
+<!-- ============ PROJECT DETAIL MODAL ============ -->
+<div id="project-modal" class="hidden fixed inset-0 z-[70]" role="dialog" aria-modal="true">
+  <div class="absolute inset-0 bg-obsidian/70 backdrop-blur-sm" aria-hidden="true"></div>
+  <div class="modal-overlay relative z-10 h-full overflow-y-auto flex items-start justify-center p-4 md:p-8">
+    <div class="modal-panel relative w-full max-w-[720px] bg-ivory rounded-lg shadow-elevated my-8">
+      <button type="button" data-modal-close aria-label="Close" class="absolute top-4 right-4 z-20 w-9 h-9 rounded-full bg-ivory/90 border border-ivory-80 flex items-center justify-center text-obsidian hover:text-signal hover:border-signal transition-colors duration-base">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+
+      <!-- 01 Lead Qualifier -->
+      <div class="modal-project hidden" data-modal-project="1">
+        <div class="relative aspect-[16/9] rounded-t-lg overflow-hidden bg-obsidian-80" aria-hidden="true">
+          <img src="https://placehold.co/960x540/1A1A1A/F5F5F2?text=Lead+Qualifier" alt="" class="absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/0 to-transparent"></div>
+          <div class="absolute inset-0 bg-signal/10 mix-blend-multiply"></div>
+        </div>
+        <div class="p-8 md:p-12">
+          <p class="font-mono text-label text-obsidian-40">01</p>
+          <h3 id="modal-title-1" class="font-display font-light text-heading-lg text-obsidian mt-2" data-i18n="portfolio.project1.title">Lead Qualifier</h3>
+
+          <div class="mt-8">
+            <p class="font-mono text-label uppercase tracking-[0.12em] text-signal" data-i18n="portfolio.labels.painPoint">Pain Point</p>
+            <h4 class="mt-2 font-display text-heading-sm font-medium text-obsidian" data-i18n="portfolio.project1.modal.painPoint.headline">Qualifying leads shouldn't be the job that eats your day.</h4>
+            <div class="mt-3 text-body-md space-y-3" style="color:#3a3a3a;" data-i18n-html="portfolio.project1.modal.painPoint.body"></div>
+          </div>
+
+          <div class="mt-8">
+            <p class="font-mono text-label uppercase tracking-[0.12em] text-signal" data-i18n="portfolio.labels.system">System</p>
+            <h4 class="mt-2 font-display text-heading-sm font-medium text-obsidian" data-i18n="portfolio.project1.modal.system.headline">An automated Lead Qualifier workflow that does the thinking for you.</h4>
+            <div class="mt-3 text-body-md space-y-3" style="color:#3a3a3a;" data-i18n-html="portfolio.project1.modal.system.body"></div>
+          </div>
+
+          <div class="mt-8">
+            <p class="font-mono text-label uppercase tracking-[0.12em] text-signal" data-i18n="portfolio.labels.description">What It Does</p>
+            <h4 class="mt-2 font-display text-heading-sm font-medium text-obsidian" data-i18n="portfolio.project1.modal.description.headline">Fill in the lead's information, and the workflow takes it from there.</h4>
+            <div class="mt-3 text-body-md space-y-3" style="color:#3a3a3a;" data-i18n-html="portfolio.project1.modal.description.body"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02 Quote & Invoice Generator -->
+      <div class="modal-project hidden" data-modal-project="2">
+        <div class="relative aspect-[16/9] rounded-t-lg overflow-hidden bg-obsidian-80" aria-hidden="true">
+          <img src="https://placehold.co/960x540/1A1A1A/F5F5F2?text=Quote+%26+Invoice" alt="" class="absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/0 to-transparent"></div>
+          <div class="absolute inset-0 bg-signal/10 mix-blend-multiply"></div>
+        </div>
+        <div class="p-8 md:p-12">
+          <p class="font-mono text-label text-obsidian-40">02</p>
+          <h3 id="modal-title-2" class="font-display font-light text-heading-lg text-obsidian mt-2" data-i18n="portfolio.project2.title">Quote &amp; Invoice Generator</h3>
+
+          <div class="mt-8">
+            <p class="font-mono text-label uppercase tracking-[0.12em] text-signal" data-i18n="portfolio.labels.painPoint">Pain Point</p>
+            <p class="mt-3 text-body-md" style="color:#3a3a3a;" data-i18n="portfolio.project2.painPoint">Putting together a quote or invoice for every new request means re-typing the same line items, pricing, and terms by hand, and one wrong number holds up payment.</p>
+          </div>
+
+          <div class="mt-8">
+            <p class="font-mono text-label uppercase tracking-[0.12em] text-signal" data-i18n="portfolio.labels.system">System</p>
+            <p class="mt-3 text-body-md" style="color:#3a3a3a;" data-i18n="portfolio.project2.system">A workflow that takes the job details someone enters into a form and turns them into a formatted quote or invoice automatically.</p>
+          </div>
+
+          <div class="mt-8">
+            <p class="font-mono text-label uppercase tracking-[0.12em] text-signal" data-i18n="portfolio.labels.description">What It Does</p>
+            <p class="mt-3 text-body-md" style="color:#3a3a3a;" data-i18n="portfolio.project2.description">Fill in the line items once. The workflow builds the document, applies the right pricing and terms, and sends it straight to the client.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 03 Real Estate Video Generator -->
+      <div class="modal-project hidden" data-modal-project="3">
+        <div class="relative aspect-[16/9] rounded-t-lg overflow-hidden bg-obsidian-80" aria-hidden="true">
+          <img src="https://placehold.co/960x540/1A1A1A/F5F5F2?text=Real+Estate+Video" alt="" class="absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/0 to-transparent"></div>
+          <div class="absolute inset-0 bg-signal/10 mix-blend-multiply"></div>
+        </div>
+        <div class="p-8 md:p-12">
+          <p class="font-mono text-label text-obsidian-40">03</p>
+          <h3 id="modal-title-3" class="font-display font-light text-heading-lg text-obsidian mt-2" data-i18n="portfolio.project3.title">Real Estate Video Generator</h3>
+
+          <div class="mt-8">
+            <p class="font-mono text-label uppercase tracking-[0.12em] text-signal" data-i18n="portfolio.labels.painPoint">Pain Point</p>
+            <p class="mt-3 text-body-md" style="color:#3a3a3a;" data-i18n="portfolio.project3.painPoint">Listing agents either pay for a video crew on every property or skip video entirely, because coordinating a shoot for each new listing costs more time and money than most listings justify.</p>
+          </div>
+
+          <div class="mt-8">
+            <p class="font-mono text-label uppercase tracking-[0.12em] text-signal" data-i18n="portfolio.labels.system">System</p>
+            <p class="mt-3 text-body-md" style="color:#3a3a3a;" data-i18n="portfolio.project3.system">A workflow that takes the property details and photos an agent already has and assembles them into a structured walkthrough video, no camera crew or editor required.</p>
+          </div>
+
+          <div class="mt-8">
+            <p class="font-mono text-label uppercase tracking-[0.12em] text-signal" data-i18n="portfolio.labels.description">What It Does</p>
+            <p class="mt-3 text-body-md" style="color:#3a3a3a;" data-i18n="portfolio.project3.description">The agent fills in the property details and uploads photos once. The workflow paces the shots, adds the property information, and returns a finished video ready to download.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 04 Script Generator -->
+      <div class="modal-project hidden" data-modal-project="4">
+        <div class="relative aspect-[16/9] rounded-t-lg overflow-hidden bg-obsidian-80" aria-hidden="true">
+          <img src="https://placehold.co/960x540/1A1A1A/F5F5F2?text=Script+Generator" alt="" class="absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/0 to-transparent"></div>
+          <div class="absolute inset-0 bg-signal/10 mix-blend-multiply"></div>
+        </div>
+        <div class="p-8 md:p-12">
+          <p class="font-mono text-label text-obsidian-40">04</p>
+          <h3 id="modal-title-4" class="font-display font-light text-heading-lg text-obsidian mt-2" data-i18n="portfolio.project4.title">Script Generator</h3>
+
+          <div class="mt-8">
+            <p class="font-mono text-label uppercase tracking-[0.12em] text-signal" data-i18n="portfolio.labels.painPoint">Pain Point</p>
+            <p class="mt-3 text-body-md" style="color:#3a3a3a;" data-i18n="portfolio.project4.painPoint">Producing a script for TV, radio, and social media means writing the same story three separate times, in whatever format each platform expects, sometimes in two languages.</p>
+          </div>
+
+          <div class="mt-8">
+            <p class="font-mono text-label uppercase tracking-[0.12em] text-signal" data-i18n="portfolio.labels.system">System</p>
+            <p class="mt-3 text-body-md" style="color:#3a3a3a;" data-i18n="portfolio.project4.system">A generator that takes one brief and produces scripts formatted for TV, radio, or social media, in English or Spanish.</p>
+          </div>
+
+          <div class="mt-8">
+            <p class="font-mono text-label uppercase tracking-[0.12em] text-signal" data-i18n="portfolio.labels.description">What It Does</p>
+            <p class="mt-3 text-body-md" style="color:#3a3a3a;" data-i18n="portfolio.project4.description">Enter the topic once and choose the formats needed. The workflow returns one script per format, ready to record or post.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 05 LinkedIn Post Generator -->
+      <div class="modal-project hidden" data-modal-project="5">
+        <div class="relative aspect-[16/9] rounded-t-lg overflow-hidden bg-obsidian-80" aria-hidden="true">
+          <img src="https://placehold.co/960x540/1A1A1A/F5F5F2?text=LinkedIn+Post+Generator" alt="" class="absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/0 to-transparent"></div>
+          <div class="absolute inset-0 bg-signal/10 mix-blend-multiply"></div>
+        </div>
+        <div class="p-8 md:p-12">
+          <p class="font-mono text-label text-obsidian-40">05</p>
+          <h3 id="modal-title-5" class="font-display font-light text-heading-lg text-obsidian mt-2" data-i18n="portfolio.project5.title">LinkedIn Post Generator</h3>
+
+          <div class="mt-8">
+            <p class="font-mono text-label uppercase tracking-[0.12em] text-signal" data-i18n="portfolio.labels.painPoint">Pain Point</p>
+            <p class="mt-3 text-body-md" style="color:#3a3a3a;" data-i18n="portfolio.project5.painPoint">Posting on LinkedIn every week takes research, writing, and finding or making an image, on top of whatever else is already on the schedule.</p>
+          </div>
+
+          <div class="mt-8">
+            <p class="font-mono text-label uppercase tracking-[0.12em] text-signal" data-i18n="portfolio.labels.system">System</p>
+            <p class="mt-3 text-body-md" style="color:#3a3a3a;" data-i18n="portfolio.project5.system">A pipeline that drafts an article and a header image for a topic someone selects, then holds it for review before anything goes out.</p>
+          </div>
+
+          <div class="mt-8">
+            <p class="font-mono text-label uppercase tracking-[0.12em] text-signal" data-i18n="portfolio.labels.description">What It Does</p>
+            <p class="mt-3 text-body-md" style="color:#3a3a3a;" data-i18n="portfolio.project5.description">Pick a topic and review the draft. Once approved, the workflow publishes the post to LinkedIn directly, no manual copy-pasting.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 <script>
   // Mobile menu
   (function () {
@@ -598,6 +784,62 @@
       });
     }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
     items.forEach(function (el) { io.observe(el); });
+  })();
+
+  // Project detail modal
+  (function () {
+    var modal = document.getElementById('project-modal');
+    if (!modal) return;
+    var panel = modal.querySelector('.modal-panel');
+    var projects = modal.querySelectorAll('[data-modal-project]');
+    var triggers = document.querySelectorAll('[data-modal-target]');
+    var lastFocused = null;
+
+    function openModal(id) {
+      projects.forEach(function (el) {
+        el.classList.toggle('hidden', el.getAttribute('data-modal-project') !== id);
+      });
+      modal.setAttribute('aria-labelledby', 'modal-title-' + id);
+      lastFocused = document.activeElement;
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      var closeBtn = modal.querySelector('[data-modal-close][type="button"]');
+      if (closeBtn) closeBtn.focus();
+      document.addEventListener('keydown', onKeydown);
+    }
+
+    function closeModal() {
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+      document.removeEventListener('keydown', onKeydown);
+      if (lastFocused && lastFocused.focus) lastFocused.focus();
+    }
+
+    function onKeydown(e) {
+      if (e.key === 'Escape') { closeModal(); return; }
+      if (e.key === 'Tab') {
+        var focusable = panel.querySelectorAll('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])');
+        if (!focusable.length) return;
+        var first = focusable[0], last = focusable[focusable.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+      }
+    }
+
+    triggers.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        openModal(btn.getAttribute('data-modal-target'));
+      });
+    });
+
+    modal.querySelectorAll('[data-modal-close]').forEach(function (el) {
+      el.addEventListener('click', closeModal);
+    });
+
+    var overlay = modal.querySelector('.modal-overlay');
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) closeModal();
+    });
   })();
 </script>
 

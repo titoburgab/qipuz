@@ -155,6 +155,7 @@ window.i18nStrings.es = {
       system:      'Sistema',
       description: 'Qué hace',
     },
+    cardCta: 'Ver detalles',
     framing: {
       eyebrow: 'Cómo leer esto',
       heading: 'Problema. Sistema. Qué hace.',
@@ -165,6 +166,20 @@ window.i18nStrings.es = {
       painPoint:   'Bufetes legales, equipos inmobiliarios y pequeños negocios pierden horas clasificando leads entrantes a mano, leyendo formularios uno por uno y adivinando cuáles vale la pena contactar.',
       system:      'Un agente de IA que lee la información que envía cada prospecto, hace una pregunta aclaratoria cuando falta información, y califica el lead según los criterios que define el negocio.',
       description: 'El agente califica cada lead apenas llega, lo marca como listo, dudoso o no calificado, y le entrega al equipo un resumen estructurado en lugar de un formulario sin procesar.',
+      modal: {
+        painPoint: {
+          headline: 'Calificar leads no debería ser el trabajo que te consume el día.',
+          body: '<p>Bufetes legales, agentes inmobiliarios y negocios en crecimiento chocan con el mismo problema: los leads llegan rápido, pero descubrir cuáles vale la pena perseguir toma un tiempo que nadie tiene. Alguien tiene que leer cada consulta, verificar los detalles, sopesar la intención frente al ajuste, y decidir quién recibe una llamada hoy y quién espera, o queda completamente fuera.</p><p>Esa clasificación manual se convierte en un cuello de botella. Los leads de alto valor quedan en fila detrás de los de bajo valor. El seguimiento se atrasa. Y mientras más crece el negocio, peor se vuelve el problema.</p>',
+        },
+        system: {
+          headline: 'Un flujo de Calificador de Leads automatizado que piensa por ti.',
+          body: '<p>En lugar de que una persona clasifique manualmente cada envío, el sistema toma la información del lead en el momento en que llega, datos de contacto, necesidades, presupuesto, plazos o detalles del caso, y la procesa con un modelo de calificación estructurado, construido en torno a lo que realmente hace que un lead valga la pena.</p><p>Sin hojas de cálculo. Sin cola de revisión manual. Sin adivinar a quién llamar primero.</p>',
+        },
+        description: {
+          headline: 'Completa la información del lead, y el flujo se encarga del resto.',
+          body: '<p>Analiza los detalles contra un conjunto definido de criterios de calificación: intención, presupuesto, urgencia, ajuste, y devuelve una puntuación clara. Los leads con puntuación alta aparecen de inmediato como prioridad. Los de puntuación más baja se marcan para seguimiento o nutrición más adelante.</p><p>El resultado: tiempos de respuesta más rápidos, ningún lead se pierde, y un equipo que dedica su tiempo a cerrar en lugar de clasificar.</p>',
+        },
+      },
     },
     project2: {
       title:       'Generador de Cotizaciones y Facturas',
