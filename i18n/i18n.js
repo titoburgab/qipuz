@@ -74,6 +74,24 @@
     return val !== undefined ? val : key;
   }
 
+  // ── Resolve <title>/description, preferring a page-specific override ────
+  // Pages other than index.html can set window.QIPUZ_PAGE = 'pageName' (see
+  // portfolio.html) so their <title>/meta description come from
+  // `pageName.meta.title` / `pageName.meta.description` instead of the
+  // global `meta.*` keys used on the homepage.
+  function metaValue(field, lang) {
+    if (window.QIPUZ_PAGE) {
+      var strings  = window.i18nStrings || {};
+      var pageKey  = window.QIPUZ_PAGE + '.meta.' + field;
+      var val = get(strings[lang] || {}, pageKey);
+      if (val === undefined && lang !== DEFAULT_LANG) {
+        val = get(strings[DEFAULT_LANG] || {}, pageKey);
+      }
+      if (val !== undefined) return val;
+    }
+    return t('meta.' + field, lang);
+  }
+
   // ── Apply all translations to the DOM ────────────────────────────────────
   function applyTranslations(lang) {
     var i, el, val;
@@ -114,13 +132,13 @@
     document.documentElement.lang = lang;
 
     // <title>
-    var titleVal = t('meta.title', lang);
+    var titleVal = metaValue('title', lang);
     if (typeof titleVal === 'string') document.title = titleVal;
 
     // <meta name="description">
     var metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      var descVal = t('meta.description', lang);
+      var descVal = metaValue('description', lang);
       if (typeof descVal === 'string') metaDesc.setAttribute('content', descVal);
     }
 

@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import puppeteer from "/Users/titoburga/Documents/Cesar Website/node_modules/puppeteer-core/lib/puppeteer/puppeteer-core.js";
+import puppeteer from "puppeteer-core";
 
 const CHROME =
   "/Users/titoburga/.cache/puppeteer/chrome/mac_arm-150.0.7871.24/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing";

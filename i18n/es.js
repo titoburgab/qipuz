@@ -17,6 +17,7 @@ window.i18nStrings.es = {
   nav: {
     services:  'Servicios',
     whyQipuz:  'Por qué QIPUZ',
+    portfolio: 'Portafolio',
     contact:   'Contacto',
     cta:       'Agendar sesión',
     menuOpen:  'Abrir menú',
@@ -137,6 +138,64 @@ window.i18nStrings.es = {
     tagline:   'Inteligencia conectada.',
     copyright: '© 2026 QIPUZ. Todos los derechos reservados.',
     label:     'Ingeniería de IA',
+  },
+
+  portfolio: {
+    meta: {
+      title:       'QIPUZ | Portafolio',
+      description: 'Sistemas de automatización que QIPUZ ha construido: calificación de leads, generación de cotizaciones y facturas, producción de video, redacción de guiones y publicación en LinkedIn, cada uno a partir de un problema real que observamos.',
+    },
+    hero: {
+      eyebrow:  'Sistemas que hemos construido',
+      headline: 'Cada proyecto empezó como el problema de alguien, no como un discurso de venta.',
+      body:     'Estos no son casos de estudio de un cliente con nombre y apellido. Son sistemas de automatización que construimos nosotros mismos, a partir de problemas que vimos u observamos de cerca: un abogado saturado de leads sin calificar, una agente inmobiliaria atrapada editando videos de propiedades, flujos que necesitábamos para nuestra propia operación. Cada tarjeta a continuación muestra el problema, el sistema que construimos y qué hace exactamente.',
+    },
+    labels: {
+      painPoint:   'Problema',
+      system:      'Sistema',
+      description: 'Qué hace',
+    },
+    framing: {
+      eyebrow: 'Cómo leer esto',
+      heading: 'Problema. Sistema. Qué hace.',
+      body:    'Cada proyecto a continuación sigue la misma estructura: el problema que identificamos, el sistema que construimos para resolverlo, y qué hace ese sistema una vez en funcionamiento.',
+    },
+    project1: {
+      title:       'Calificador de Leads',
+      painPoint:   'Bufetes legales, equipos inmobiliarios y pequeños negocios pierden horas clasificando leads entrantes a mano, leyendo formularios uno por uno y adivinando cuáles vale la pena contactar.',
+      system:      'Un agente de IA que lee la información que envía cada prospecto, hace una pregunta aclaratoria cuando falta información, y califica el lead según los criterios que define el negocio.',
+      description: 'El agente califica cada lead apenas llega, lo marca como listo, dudoso o no calificado, y le entrega al equipo un resumen estructurado en lugar de un formulario sin procesar.',
+    },
+    project2: {
+      title:       'Generador de Cotizaciones y Facturas',
+      painPoint:   'Armar una cotización o factura para cada solicitud implica volver a escribir a mano los mismos ítems, precios y términos, y un solo número equivocado detiene el pago.',
+      system:      'Un flujo de trabajo que toma los detalles que alguien ingresa en un formulario y los convierte automáticamente en una cotización o factura con el formato correcto.',
+      description: 'Se ingresan los ítems una sola vez. El flujo arma el documento, aplica los precios y términos correctos, y lo envía directamente al cliente.',
+    },
+    project3: {
+      title:       'Generador de Videos Inmobiliarios',
+      painPoint:   'Los agentes inmobiliarios contratan un equipo de video para cada propiedad o se saltan el video por completo, porque coordinar una grabación para cada nueva propiedad cuesta más tiempo y dinero de lo que la mayoría de las propiedades justifica.',
+      system:      'Un flujo de trabajo que toma los detalles y las fotos que el agente ya tiene y los convierte en un video de recorrido estructurado, sin equipo de grabación ni editor.',
+      description: 'El agente ingresa los detalles de la propiedad y sube las fotos una sola vez. El flujo ordena las tomas, agrega la información de la propiedad y entrega un video terminado, listo para descargar.',
+    },
+    project4: {
+      title:       'Generador de Guiones',
+      painPoint:   'Producir un guion para TV, radio y redes sociales significa escribir la misma historia tres veces, en el formato que exige cada plataforma, a veces en dos idiomas.',
+      system:      'Un generador que toma un solo brief y produce guiones con el formato de TV, radio o redes sociales, en inglés o español.',
+      description: 'Se ingresa el tema una vez y se eligen los formatos necesarios. El flujo entrega un guion por formato, listo para grabar o publicar.',
+    },
+    project5: {
+      title:       'Generador de Publicaciones de LinkedIn',
+      painPoint:   'Publicar en LinkedIn cada semana implica investigar, escribir y conseguir o crear una imagen, además de todo lo que ya está en la agenda.',
+      system:      'Un flujo que redacta un artículo y una imagen de portada para un tema seleccionado, y lo deja en espera de revisión antes de publicar nada.',
+      description: 'Se elige un tema y se revisa el borrador. Una vez aprobado, el flujo publica el post directamente en LinkedIn, sin copiar y pegar manualmente.',
+    },
+    cta: {
+      eyebrow: '¿Tienes un Problema Similar?',
+      heading: 'Si alguno de estos se parece a tu problema, hablemos de construir el tuyo.',
+      body:    'Cada sistema en esta página empezó igual que empezaría esta conversación: un proceso específico que costaba tiempo o dinero. Cuéntanos qué es lento, manual o inconsistente en tu operación, y te diremos con honestidad si un sistema automatizado es la solución correcta.',
+      button:  'Inicia una Conversación',
+    },
   },
 
 };

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QIPUZ | Portfolio</title>
+<meta name="description" content="Automation systems QIPUZ has built: lead qualification, quote and invoice generation, video production, script writing, and LinkedIn publishing, each built from a real, observed problem.">
+
+<!-- hreflang alternate links — hrefs populated at runtime by i18n.js -->
+<link rel="alternate" hreflang="en" href="">
+<link rel="alternate" hreflang="es" href="">
+<link rel="alternate" hreflang="x-default" href="">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 121 120'%3E%3Cpath d='M59.8763 0C92.9451 0 119.753 26.7237 119.753 59.6891C119.753 73.2242 115.23 85.7043 107.613 95.7173L96.2818 83.7156C100.864 76.8298 103.536 68.5713 103.536 59.6891C103.536 35.6519 83.9889 16.1658 59.8763 16.1658C35.7637 16.1658 16.2165 35.6519 16.2165 59.6891C16.2165 83.7264 35.7637 103.212 59.8763 103.212C62.8883 103.212 65.8288 102.907 68.6692 102.328L80.8145 115.622C74.2966 118.048 67.2426 119.378 59.8763 119.378C26.8075 119.378 0 92.6545 0 59.6891C0 26.7237 26.8075 0 59.8763 0Z' fill='%230A0A0A'/%3E%3Cpath d='M85.4485 82.6943H59.2526L94.1804 120H121L85.4485 82.6943Z' fill='%230A0A0A'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- i18n: load before render to avoid flash of wrong language -->
+<script src="/i18n/en.js"></script>
+<script src="/i18n/es.js"></script>
+<script>window.QIPUZ_PAGE = 'portfolio';</script>
+<script src="/i18n/i18n.js"></script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ivory: { DEFAULT: '#F5F5F2', 80: '#E8E8E5', 60: '#DDDDD9' },
+          obsidian: { DEFAULT: '#0A0A0A', 80: '#1A1A1A', 60: '#2A2A2A', 40: '#555555' },
+          signal: '#FF3B30',
+          copper: '#FF7A00',
+          amber: '#FFB800',
+          ember: '#FF4000',
+          gold: '#FFD166',
+          plasma: '#FF2D55',
+        },
+        fontFamily: {
+          display: ['"Instrument Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+          sans: ['"Inter"', 'system-ui', '-apple-system', 'sans-serif'],
+          mono: ['"IBM Plex Mono"', '"Fira Code"', 'monospace'],
+        },
+        fontSize: {
+          'display-xl': ['72px', { lineHeight: '1.05', letterSpacing: '-0.02em' }],
+          'display-lg': ['56px', { lineHeight: '1.1', letterSpacing: '-0.02em' }],
+          'display-md': ['40px', { lineHeight: '1.15', letterSpacing: '-0.02em' }],
+          'heading-lg': ['32px', { lineHeight: '1.2', letterSpacing: '-0.01em' }],
+          'heading-md': ['24px', { lineHeight: '1.3', letterSpacing: '-0.01em' }],
+          'heading-sm': ['20px', { lineHeight: '1.35', letterSpacing: '-0.01em' }],
+          'body-lg': ['18px', { lineHeight: '1.6' }],
+          'body-md': ['16px', { lineHeight: '1.65' }],
+          'body-sm': ['14px', { lineHeight: '1.6' }],
+          label: ['12px', { lineHeight: '1.4', letterSpacing: '0.08em' }],
+        },
+        maxWidth: { content: '1200px' },
+        borderRadius: { none: '0px', sm: '4px', DEFAULT: '8px', md: '8px', lg: '12px', xl: '16px', full: '9999px' },
+        transitionTimingFunction: {
+          standard: 'cubic-bezier(0.4,0,0.2,1)',
+          enter: 'cubic-bezier(0,0,0.2,1)',
+          exit: 'cubic-bezier(0.4,0,1,1)',
+          emphasis: 'cubic-bezier(0.2,0,0,1)',
+        },
+        transitionDuration: { instant: '80ms', fast: '160ms', base: '240ms', slow: '400ms' },
+      },
+    },
+  };
+</script>
+
+<style>
+  :root { color-scheme: light; }
+
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+
+  body { font-family: "Inter", system-ui, sans-serif; }
+
+  ::selection { background: #FF3B30; color: #F5F5F2; }
+
+  :focus-visible {
+    outline: 2px solid #FF3B30;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 100;
+    background: #0A0A0A;
+    color: #F5F5F2;
+    padding: 12px 20px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 14px;
+  }
+  .skip-link:focus { left: 16px; top: 16px; }
+
+  .shadow-card {
+    box-shadow: 0 1px 2px rgba(10,10,10,0.05), 0 6px 16px -6px rgba(10,10,10,0.10), 0 16px 32px -16px rgba(10,10,10,0.10);
+  }
+  .shadow-card-hover {
+    box-shadow: 0 18px 30px -10px rgba(10,10,10,0.16), 0 6px 12px -4px rgba(10,10,10,0.08), 0 0 0 1px rgba(255,59,48,0.06), 0 14px 40px -8px rgba(255,59,48,0.10);
+  }
+  #site-header.is-scrolled { box-shadow: 0 1px 0 rgba(10,10,10,0.04), 0 12px 24px -16px rgba(10,10,10,0.18); }
+  #site-header.is-dark.is-scrolled { box-shadow: 0 1px 0 rgba(0,0,0,0.3), 0 12px 24px -16px rgba(0,0,0,0.5); }
+
+  .grain::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.05;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* Nav link underline */
+  .nav-link { position: relative; }
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0; bottom: -6px;
+    width: 100%; height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 240ms cubic-bezier(0.4,0,0.2,1);
+  }
+  .nav-link:hover::after, .nav-link:focus-visible::after { transform: scaleX(1); }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    font-family: "Inter", sans-serif; font-weight: 500; font-size: 14px;
+    padding: 12px 24px; border-radius: 8px;
+    transition: transform 160ms cubic-bezier(0.4,0,0.2,1), box-shadow 240ms cubic-bezier(0.4,0,0.2,1), background-color 240ms cubic-bezier(0.4,0,0.2,1), color 240ms cubic-bezier(0.4,0,0.2,1), border-color 240ms cubic-bezier(0.4,0,0.2,1);
+  }
+  .btn:active { transform: scale(0.97); }
+  .btn-primary {
+    background: #FF3B30; color: #F5F5F2;
+    box-shadow: 0 8px 20px -6px rgba(255,59,48,0.45);
+  }
+  .btn-primary:hover { background: #e8362c; box-shadow: 0 12px 26px -6px rgba(255,59,48,0.55); }
+  .btn-secondary {
+    background: transparent; color: #0A0A0A; border: 1px solid #0A0A0A;
+  }
+  .btn-secondary:hover { background: #0A0A0A; color: #F5F5F2; }
+
+  /* Project cards (shares the homepage's service-card recipe) */
+  .service-card {
+    transition: transform 400ms cubic-bezier(0.2,0,0,1), box-shadow 400ms cubic-bezier(0.2,0,0,1), border-color 400ms cubic-bezier(0.2,0,0,1);
+  }
+  .service-card:hover { transform: translateY(-4px); }
+  .service-icon { transition: color 240ms cubic-bezier(0.4,0,0.2,1); }
+  .service-card:hover .service-icon { color: #FF3B30; }
+  .service-title { transition: color 240ms cubic-bezier(0.4,0,0.2,1); }
+  .service-card:hover .service-title { color: #FF3B30; }
+
+  /* Reveal-on-scroll */
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity 700ms cubic-bezier(0,0,0.2,1), transform 700ms cubic-bezier(0,0,0.2,1); }
+  .reveal.is-visible { opacity: 1; transform: translateY(0); }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+  }
+
+  .service-card:nth-child(1) { transition-delay: 0ms; }
+  .service-card:nth-child(2) { transition-delay: 80ms; }
+  .service-card:nth-child(3) { transition-delay: 160ms; }
+  .service-card:nth-child(4) { transition-delay: 240ms; }
+  .service-card:nth-child(5) { transition-delay: 320ms; }
+  @media (prefers-reduced-motion: reduce) {
+    .service-card { transition-delay: 0ms; }
+  }
+
+  /* Header */
+  #site-header { transition: background-color 400ms cubic-bezier(0.4,0,0.2,1), border-color 400ms cubic-bezier(0.4,0,0.2,1), backdrop-filter 400ms; }
+  #site-header.is-scrolled { background-color: rgba(245,245,242,0.82); backdrop-filter: blur(12px); border-bottom: 1px solid #E8E8E5; }
+  #site-header.is-dark { color: #F5F5F2; }
+  #site-header.is-dark.is-scrolled { background-color: rgba(10,10,10,0.78); border-bottom: 1px solid #2A2A2A; }
+  #site-header.is-dark .nav-link, #site-header.is-dark a { color: #F5F5F2; }
+  .logo-on-dark { display: none; }
+  #site-header.is-dark .logo-on-light { display: none; }
+  #site-header.is-dark .logo-on-dark { display: block; }
+
+  /* Language toggle */
+  .lang-btn {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    color: #555555;
+    border-radius: 4px;
+    padding: 3px 5px;
+    transition: color 160ms cubic-bezier(0.4,0,0.2,1);
+  }
+  .lang-btn[aria-pressed="true"]  { color: #FF3B30; }
+  .lang-btn:hover                 { color: #0A0A0A; }
+  .lang-btn:focus-visible         { outline: 2px solid #FF3B30; outline-offset: 2px; }
+  #site-header.is-dark .lang-btn                    { color: rgba(245,245,242,0.45); }
+  #site-header.is-dark .lang-btn[aria-pressed="true"]{ color: #FF3B30; }
+  #site-header.is-dark .lang-btn:hover              { color: #F5F5F2; }
+</style>
+</head>
+<body class="bg-ivory text-obsidian antialiased">
+
+<a href="#main" class="skip-link" data-i18n="skip.link">Skip to content</a>
+
+<!-- ============ HEADER / NAV ============ -->
+<header id="site-header" class="fixed top-0 inset-x-0 z-50">
+  <nav class="mx-auto max-w-content px-5 md:px-10 lg:px-20 h-20 flex items-center justify-between" aria-label="Primary">
+    <a href="/index.html" class="flex items-center" aria-label="QIPUZ home">
+      <svg class="logo-on-light" width="127" height="26" viewBox="0 0 250 51" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <title>QIPUZ</title>
+        <path d="M231 20H248L231 35H249" stroke="black" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M189 18.5V35H206V18.5" stroke="black" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M148 36V19.5C148 19.5 160.402 19.5 163 19.5C165.598 19.5 165.598 21.9708 165.598 24C165.598 26.0292 165.598 28.5 163 28.5C160.402 28.5 152.5 28.5 152.5 28.5" stroke="black" stroke-width="3"/>
+        <path d="M121 18.5V36" stroke="black" stroke-width="3"/>
+        <path d="M84.3814 14C90.6672 14 95.7629 19.122 95.7629 25.4404C95.7629 28.0346 94.9032 30.4267 93.4554 32.3458L91.3015 30.0455C92.1725 28.7257 92.6804 27.1428 92.6804 25.4404C92.6804 20.8333 88.9648 17.0984 84.3814 17.0984C79.798 17.0984 76.0825 20.8333 76.0825 25.4404C76.0825 30.0476 79.798 33.7824 84.3814 33.7824C84.954 33.7824 85.5129 33.7239 86.0528 33.6129L88.3614 36.1609C87.1225 36.6258 85.7817 36.8808 84.3814 36.8808C78.0956 36.8808 73 31.7588 73 25.4404C73 19.122 78.0956 14 84.3814 14Z" fill="black"/>
+        <path d="M89.2423 29.8497H84.2629L90.9021 37H96L89.2423 29.8497Z" fill="black"/>
+        <path d="M84.3814 14C90.6672 14 95.7629 19.122 95.7629 25.4404C95.7629 28.0346 94.9032 30.4267 93.4554 32.3458L91.3015 30.0455C92.1725 28.7257 92.6804 27.1428 92.6804 25.4404C92.6804 20.8333 88.9648 17.0984 84.3814 17.0984C79.798 17.0984 76.0825 20.8333 76.0825 25.4404C76.0825 30.0476 79.798 33.7824 84.3814 33.7824C84.954 33.7824 85.5129 33.7239 86.0528 33.6129L88.3614 36.1609C87.1225 36.6258 85.7817 36.8808 84.3814 36.8808C78.0956 36.8808 73 31.7588 73 25.4404C73 19.122 78.0956 14 84.3814 14Z" stroke="black"/>
+        <path d="M89.2423 29.8497H84.2629L90.9021 37H96L89.2423 29.8497Z" stroke="black"/>
+        <path d="M25.2371 0C39.1752 0 50.4742 11.3576 50.4742 25.3679C50.4742 31.1203 48.5679 36.4243 45.3577 40.6798L40.5816 35.5791C42.5129 32.6527 43.6392 29.1428 43.6392 25.3679C43.6392 15.152 35.4003 6.87047 25.2371 6.87047C15.0739 6.87047 6.83505 15.152 6.83505 25.3679C6.83505 35.5837 15.0739 43.8653 25.2371 43.8653C26.5066 43.8653 27.746 43.7356 28.9432 43.4896L34.0623 49.1394C31.3151 50.1704 28.3419 50.7358 25.2371 50.7358C11.299 50.7358 0 39.3782 0 25.3679C0 11.3576 11.299 0 25.2371 0Z" fill="black"/>
+        <path d="M36.0155 35.1451H24.9742L39.6959 51H51L36.0155 35.1451Z" fill="black"/>
+      </svg>
+      <svg class="logo-on-dark" width="127" height="26" viewBox="0 0 250 51" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <title>QIPUZ</title>
+        <path d="M231 20H248L231 35H249" stroke="white" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M189 18.5V35H206V18.5" stroke="white" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M148 36V19.5C148 19.5 160.402 19.5 163 19.5C165.598 19.5 165.598 21.9708 165.598 24C165.598 26.0292 165.598 28.5 163 28.5C160.402 28.5 152.5 28.5 152.5 28.5" stroke="white" stroke-width="3"/>
+        <path d="M121 18.5V36" stroke="white" stroke-width="3"/>
+        <path d="M84.3814 14C90.6672 14 95.7629 19.122 95.7629 25.4404C95.7629 28.0346 94.9032 30.4267 93.4554 32.3458L91.3015 30.0455C92.1725 28.7257 92.6804 27.1428 92.6804 25.4404C92.6804 20.8333 88.9648 17.0984 84.3814 17.0984C79.798 17.0984 76.0825 20.8333 76.0825 25.4404C76.0825 30.0476 79.798 33.7824 84.3814 33.7824C84.954 33.7824 85.5129 33.7239 86.0528 33.6129L88.3614 36.1609C87.1225 36.6258 85.7817 36.8808 84.3814 36.8808C78.0956 36.8808 73 31.7588 73 25.4404C73 19.122 78.0956 14 84.3814 14Z" fill="white"/>
+        <path d="M89.2423 29.8497H84.2629L90.9021 37H96L89.2423 29.8497Z" fill="white"/>
+        <path d="M84.3814 14C90.6672 14 95.7629 19.122 95.7629 25.4404C95.7629 28.0346 94.9032 30.4267 93.4554 32.3458L91.3015 30.0455C92.1725 28.7257 92.6804 27.1428 92.6804 25.4404C92.6804 20.8333 88.9648 17.0984 84.3814 17.0984C79.798 17.0984 76.0825 20.8333 76.0825 25.4404C76.0825 30.0476 79.798 33.7824 84.3814 33.7824C84.954 33.7824 85.5129 33.7239 86.0528 33.6129L88.3614 36.1609C87.1225 36.6258 85.7817 36.8808 84.3814 36.8808C78.0956 36.8808 73 31.7588 73 25.4404C73 19.122 78.0956 14 84.3814 14Z" stroke="white"/>
+        <path d="M89.2423 29.8497H84.2629L90.9021 37H96L89.2423 29.8497Z" stroke="white"/>
+        <path d="M25.2371 0C39.1752 0 50.4742 11.3576 50.4742 25.3679C50.4742 31.1203 48.5679 36.4243 45.3577 40.6798L40.5816 35.5791C42.5129 32.6527 43.6392 29.1428 43.6392 25.3679C43.6392 15.152 35.4003 6.87047 25.2371 6.87047C15.0739 6.87047 6.83505 15.152 6.83505 25.3679C6.83505 35.5837 15.0739 43.8653 25.2371 43.8653C26.5066 43.8653 27.746 43.7356 28.9432 43.4896L34.0623 49.1394C31.3151 50.1704 28.3419 50.7358 25.2371 50.7358C11.299 50.7358 0 39.3782 0 25.3679C0 11.3576 11.299 0 25.2371 0Z" fill="white"/>
+        <path d="M36.0155 35.1451H24.9742L39.6959 51H51L36.0155 35.1451Z" fill="white"/>
+      </svg>
+    </a>
+
+    <div class="hidden lg:flex items-center gap-10 font-sans text-body-sm font-medium">
+      <a href="/index.html#services" class="nav-link" data-i18n="nav.services">Services</a>
+      <a href="/index.html#why-qipuz" class="nav-link" data-i18n="nav.whyQipuz">Why QIPUZ</a>
+      <a href="/portfolio.html" class="nav-link" data-i18n="nav.portfolio" aria-current="page">Portfolio</a>
+    </div>
+
+    <div class="hidden lg:flex items-center gap-6">
+      <div role="group" data-i18n-aria-label="nav.lang" aria-label="Language" class="flex items-center gap-0.5">
+        <button data-lang-btn="en" aria-pressed="true" class="lang-btn">EN</button>
+        <span class="text-obsidian-40/30 select-none font-mono text-[10px] px-0.5" aria-hidden="true">/</span>
+        <button data-lang-btn="es" aria-pressed="false" class="lang-btn">ES</button>
+      </div>
+      <a href="/index.html#contact" class="btn btn-primary" data-i18n="nav.cta">Book a Session</a>
+    </div>
+
+    <button id="menu-toggle" class="lg:hidden p-2 -mr-2" data-i18n-aria-label="nav.menuOpen" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg id="menu-icon-open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <svg id="menu-icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="hidden"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </nav>
+
+  <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 top-20 z-40 bg-ivory overflow-y-auto">
+    <div class="px-5 py-8 flex flex-col gap-6 font-sans text-heading-sm">
+      <a href="/index.html#services" class="mobile-link" data-i18n="nav.services">Services</a>
+      <a href="/index.html#why-qipuz" class="mobile-link" data-i18n="nav.whyQipuz">Why QIPUZ</a>
+      <a href="/portfolio.html" class="mobile-link" data-i18n="nav.portfolio" aria-current="page">Portfolio</a>
+      <div class="pt-4 border-t border-ivory-80">
+        <div role="group" data-i18n-aria-label="nav.lang" aria-label="Language" class="flex items-center gap-2">
+          <button data-lang-btn="en" aria-pressed="true" class="lang-btn" style="font-size:14px; padding:5px 8px;">EN</button>
+          <span class="text-obsidian-40/40 select-none font-mono" aria-hidden="true">·</span>
+          <button data-lang-btn="es" aria-pressed="false" class="lang-btn" style="font-size:14px; padding:5px 8px;">ES</button>
+        </div>
+      </div>
+      <a href="/index.html#contact" class="btn btn-primary w-full" data-i18n="nav.cta">Book a Session</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="grain relative overflow-hidden pt-40 pb-16 md:pt-48 md:pb-20">
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0" style="background: radial-gradient(55% 50% at 82% 20%, rgba(255,59,48,0.09), transparent 70%), radial-gradient(40% 35% at 10% 90%, rgba(255,123,0,0.06), transparent 70%);"></div>
+
+    <div class="relative z-10 mx-auto max-w-content px-5 md:px-10 lg:px-20">
+      <div class="reveal max-w-[720px]">
+        <p class="font-mono text-label uppercase tracking-[0.12em] text-obsidian-40 mb-6 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="portfolio.hero.eyebrow">Systems We've Built</span></p>
+        <h1 class="font-display font-light text-heading-lg md:text-display-md text-obsidian" data-i18n="portfolio.hero.headline">Every project started as someone's problem, not a pitch.</h1>
+        <p class="mt-5 max-w-[620px] text-body-lg text-obsidian-40 leading-[1.7]" style="color:#3a3a3a;" data-i18n="portfolio.hero.body">These aren't client case studies with a name attached to them. They're automation systems we built ourselves, from problems we saw or heard about directly: a lawyer buried in unqualified leads, a real estate agent stuck editing property videos, workflows we needed for our own operation. Each card below shows the problem, the system we built, and what it actually does.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FRAMING ============ -->
+  <section class="py-10 md:py-14">
+    <div class="mx-auto max-w-content px-5 md:px-10 lg:px-20">
+      <div class="reveal rounded-lg border border-ivory-80 bg-ivory shadow-card p-8 md:p-12 max-w-[760px] mx-auto text-center">
+        <p class="font-mono text-label uppercase tracking-[0.12em] text-obsidian-40 mb-4 flex items-center justify-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="portfolio.framing.eyebrow">How to Read This</span></p>
+        <h2 class="font-display font-light text-heading-md md:text-heading-lg text-obsidian" data-i18n="portfolio.framing.heading">Pain point. System. What it does.</h2>
+        <p class="mt-4 text-body-md" style="color:#3a3a3a;" data-i18n="portfolio.framing.body">Every project below follows the same structure: the problem we saw, the system we built to solve it, and what that system actually does once it's running.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="relative overflow-hidden py-16 md:py-20 lg:py-24">
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0" style="background: radial-gradient(45% 40% at 85% 10%, rgba(255,59,48,0.045), transparent 70%);"></div>
+    <div class="relative mx-auto max-w-content px-5 md:px-10 lg:px-20">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+        <!-- 01 Lead Qualifier -->
+        <article class="reveal service-card lg:col-span-6 bg-ivory border border-ivory-80 rounded-lg p-8 md:p-10 shadow-card hover:shadow-card-hover">
+          <div class="flex items-start justify-between mb-8">
+            <svg class="service-icon w-8 h-8 text-obsidian" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4.5h16l-6.2 7.4v6.1l-3.6 1.8v-7.9z"/>
+              <path d="M15.2 15l1.9 1.9 3.9-3.9"/>
+            </svg>
+            <span class="font-mono text-label text-obsidian-40">01</span>
+          </div>
+          <h3 class="service-title font-display text-heading-md font-medium text-obsidian" data-i18n="portfolio.project1.title">Lead Qualifier</h3>
+
+          <p class="font-mono text-label uppercase tracking-[0.12em] text-obsidian-40 mt-6" data-i18n="portfolio.labels.painPoint">Pain Point</p>
+          <p class="mt-1.5 text-body-sm" style="color:#3a3a3a;" data-i18n="portfolio.project1.painPoint">Law firms, real estate teams, and small businesses lose hours triaging inbound leads by hand, reading intake forms one at a time and guessing which ones are worth a callback.</p>
+
+          <p class="font-mono text-label uppercase tracking-[0.12em] text-obsidian-40 mt-4" data-i18n="portfolio.labels.system">System</p>
+          <p class="mt-1.5 text-body-sm" style="color:#3a3a3a;" data-i18n="portfolio.project1.system">An AI intake agent that reads the information a prospect submits, asks a clarifying question where the submission is incomplete, and scores the lead against criteria the business sets.</p>
+
+          <p class="font-mono text-label uppercase tracking-[0.12em] text-obsidian-40 mt-4" data-i18n="portfolio.labels.description">What It Does</p>
+          <p class="mt-1.5 text-body-sm" style="color:#3a3a3a;" data-i18n="portfolio.project1.description">The agent qualifies each lead as it arrives, tags it ready, borderline, or not a fit, and hands the team a structured summary instead of a raw form submission.</p>
+        </article>
+
+        <!-- 02 Quote & Invoice Generator -->
+        <article class="reveal service-card lg:col-span-6 bg-ivory border border-ivory-80 rounded-lg p-8 md:p-10 shadow-card hover:shadow-card-hover">
+          <div class="flex items-start justify-between mb-8">
+            <svg class="service-icon w-8 h-8 text-obsidian" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M7 3.5h8l3 3v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-15a1 1 0 0 1 1-1z"/>
+              <path d="M15 3.5V7h3"/>
+              <path d="M9.3 12.2h5.4M9.3 15.2h5.4"/>
+              <circle cx="12" cy="18.5" r="0.9" fill="currentColor" stroke="none"/>
+            </svg>
+            <span class="font-mono text-label text-obsidian-40">02</span>
+          </div>
+          <h3 class="service-title font-display text-heading-md font-medium text-obsidian" data-i18n="portfolio.project2.title">Quote &amp; Invoice Generator</h3>
+
+          <p class="font-mono text-label uppercase tracking-[0.12em] text-obsidian-40 mt-6" data-i18n="portfolio.labels.painPoint">Pain Point</p>
+          <p class="mt-1.5 text-body-sm" style="color:#3a3a3a;" data-i18n="portfolio.project2.painPoint">Putting together a quote or invoice for every new request means re-typing the same line items, pricing, and terms by hand, and one wrong number holds up payment.</p>
+
+          <p class="font-mono text-label uppercase tracking-[0.12em] text-obsidian-40 mt-4" data-i18n="portfolio.labels.system">System</p>
+          <p class="mt-1.5 text-body-sm" style="color:#3a3a3a;" data-i18n="portfolio.project2.system">A workflow that takes the job details someone enters into a form and turns them into a formatted quote or invoice automatically.</p>
+
+          <p class="font-mono text-label uppercase tracking-[0.12em] text-obsidian-40 mt-4" data-i18n="portfolio.labels.description">What It Does</p>
+          <p class="mt-1.5 text-body-sm" style="color:#3a3a3a;" data-i18n="portfolio.project2.description">Fill in the line items once. The workflow builds the document, applies the right pricing and terms, and sends it straight to the client.</p>
+        </article>
+
+        <!-- 03 Real Estate Video Generator -->
+        <article class="reveal service-card lg:col-span-6 bg-ivory border border-ivory-80 rounded-lg p-8 md:p-10 shadow-card hover:shadow-card-hover">
+          <div class="flex items-start justify-between mb-8">
+            <svg class="service-icon w-8 h-8 text-obsidian" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 11.5L12 5l8 6.5"/>
+              <path d="M6 10.3V19h12v-8.7"/>
+              <path d="M10.3 13.3l4.2 2.3-4.2 2.3z" fill="currentColor" stroke="none"/>
+            </svg>
+            <span class="font-mono text-label text-obsidian-40">03</span>
+          </div>
+          <h3 class="service-title font-display text-heading-md font-medium text-obsidian" data-i18n="portfolio.project3.title">Real Estate Video Generator</h3>
+
+          <p class="font-mono text-label uppercase tracking-[0.12em] text-obsidian-40 mt-6" data-i18n="portfolio.labels.painPoint">Pain Point</p>
+          <p class="mt-1.5 text-body-sm" style="color:#3a3a3a;" data-i18n="portfolio.project3.painPoint">Listing agents either pay for a video crew on every property or skip video entirely, because coordinating a shoot for each new listing costs more time and money than most listings justify.</p>
+
+          <p class="font-mono text-label uppercase tracking-[0.12em] text-obsidian-40 mt-4" data-i18n="portfolio.labels.system">System</p>
+          <p class="mt-1.5 text-body-sm" style="color:#3a3a3a;" data-i18n="portfolio.project3.system">A workflow that takes the property details and photos an agent already has and assembles them into a structured walkthrough video, no camera crew or editor required.</p>
+
+          <p class="font-mono text-label uppercase tracking-[0.12em] text-obsidian-40 mt-4" data-i18n="portfolio.labels.description">What It Does</p>
+          <p class="mt-1.5 text-body-sm" style="color:#3a3a3a;" data-i18n="portfolio.project3.description">The agent fills in the property details and uploads photos once. The workflow paces the shots, adds the property information, and returns a finished video ready to download.</p>
+        </article>
+
+        <!-- 04 Script Generator -->
+        <article class="reveal service-card lg:col-span-6 bg-ivory border border-ivory-80 rounded-lg p-8 md:p-10 shadow-card hover:shadow-card-hover">
+          <div class="flex items-start justify-between mb-8">
+            <svg class="service-icon w-8 h-8 text-obsidian" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 5.5h8l3 3v10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-12a1 1 0 0 1 1-1z"/>
+              <path d="M13 5.5V9h3"/>
+              <path d="M7.5 13h7" stroke-dasharray="1.6 2"/>
+              <path d="M7.5 16h4.5" stroke-dasharray="1.6 2"/>
+            </svg>
+            <span class="font-mono text-label text-obsidian-40">04</span>
+          </div>
+          <h3 class="service-title font-display text-heading-md font-medium text-obsidian" data-i18n="portfolio.project4.title">Script Generator</h3>
+
+          <p class="font-mono text-label uppercase tracking-[0.12em] text-obsidian-40 mt-6" data-i18n="portfolio.labels.painPoint">Pain Point</p>
+          <p class="mt-1.5 text-body-sm" style="color:#3a3a3a;" data-i18n="portfolio.project4.painPoint">Producing a script for TV, radio, and social media means writing the same story three separate times, in whatever format each platform expects, sometimes in two languages.</p>
+
+          <p class="font-mono text-label uppercase tracking-[0.12em] text-obsidian-40 mt-4" data-i18n="portfolio.labels.system">System</p>
+          <p class="mt-1.5 text-body-sm" style="color:#3a3a3a;" data-i18n="portfolio.project4.system">A generator that takes one brief and produces scripts formatted for TV, radio, or social media, in English or Spanish.</p>
+
+          <p class="font-mono text-label uppercase tracking-[0.12em] text-obsidian-40 mt-4" data-i18n="portfolio.labels.description">What It Does</p>
+          <p class="mt-1.5 text-body-sm" style="color:#3a3a3a;" data-i18n="portfolio.project4.description">Enter the topic once and choose the formats needed. The workflow returns one script per format, ready to record or post.</p>
+        </article>
+
+        <!-- 05 LinkedIn Post Generator (full-width closer) -->
+        <article class="reveal service-card lg:col-span-12 bg-ivory border border-ivory-80 rounded-lg p-8 md:p-10 shadow-card hover:shadow-card-hover">
+          <div class="grid md:grid-cols-12 gap-8">
+            <div class="md:col-span-4">
+              <div class="flex items-center gap-4">
+                <svg class="service-icon w-8 h-8 text-obsidian" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="4" y="5" width="16" height="14" rx="1.5"/>
+                  <rect x="6.3" y="7.3" width="5" height="4" rx="0.6"/>
+                  <path d="M13.3 8.3h4.2M13.3 10.8h4.2"/>
+                  <path d="M6.3 14.5h11.4M6.3 16.5h7.2"/>
+                </svg>
+                <span class="font-mono text-label text-obsidian-40">05</span>
+              </div>
+              <h3 class="service-title font-display text-heading-md font-medium text-obsidian mt-4" data-i18n="portfolio.project5.title">LinkedIn Post Generator</h3>
+            </div>
+
+            <div class="md:col-span-8 grid sm:grid-cols-3 gap-6">
+              <div>
+                <p class="font-mono text-label uppercase tracking-[0.12em] text-obsidian-40 mb-1.5" data-i18n="portfolio.labels.painPoint">Pain Point</p>
+                <p class="text-body-sm" style="color:#3a3a3a;" data-i18n="portfolio.project5.painPoint">Posting on LinkedIn every week takes research, writing, and finding or making an image, on top of whatever else is already on the schedule.</p>
+              </div>
+              <div>
+                <p class="font-mono text-label uppercase tracking-[0.12em] text-obsidian-40 mb-1.5" data-i18n="portfolio.labels.system">System</p>
+                <p class="text-body-sm" style="color:#3a3a3a;" data-i18n="portfolio.project5.system">A pipeline that drafts an article and a header image for a topic someone selects, then holds it for review before anything goes out.</p>
+              </div>
+              <div>
+                <p class="font-mono text-label uppercase tracking-[0.12em] text-obsidian-40 mb-1.5" data-i18n="portfolio.labels.description">What It Does</p>
+                <p class="text-body-sm" style="color:#3a3a3a;" data-i18n="portfolio.project5.description">Pick a topic and review the draft. Once approved, the workflow publishes the post to LinkedIn directly, no manual copy-pasting.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CLOSING CTA ============ -->
+  <section class="py-16 md:py-20">
+    <div class="mx-auto max-w-content px-5 md:px-10 lg:px-20">
+      <div class="reveal rounded-lg border border-ivory-80 bg-ivory shadow-card p-8 md:p-12 grid md:grid-cols-12 gap-8 items-center">
+        <div class="md:col-span-8">
+          <p class="font-mono text-label uppercase tracking-[0.12em] text-obsidian-40 mb-4 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="portfolio.cta.eyebrow">Have a Similar Problem?</span></p>
+          <h2 class="font-display font-light text-heading-md md:text-heading-lg text-obsidian" data-i18n="portfolio.cta.heading">If one of these looks like your problem, let's talk about building yours.</h2>
+          <p class="mt-4 text-body-md max-w-[620px]" style="color:#3a3a3a;" data-i18n="portfolio.cta.body">Every system on this page started the same way this conversation would: a specific process that was costing time or money. Tell us what's slow, manual, or inconsistent in your operation, and we'll tell you honestly whether an automated system is the right fix.</p>
+        </div>
+        <div class="md:col-span-4 md:text-right">
+          <a href="/index.html#contact" class="btn btn-secondary px-7 py-4 text-body-md" data-i18n="portfolio.cta.button">Start a Conversation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-obsidian text-ivory border-t border-obsidian-60" style="background-color:#1F0001;">
+  <div class="mx-auto max-w-content px-5 md:px-10 lg:px-20 py-16">
+    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-12">
+      <div>
+        <a href="/index.html" class="flex items-center" aria-label="QIPUZ home">
+          <svg width="125" height="26" viewBox="0 0 250 51" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <title>QIPUZ</title>
+            <path d="M231 20H248L231 35H249" stroke="#F5F5F2" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M189 18.5V35H206V18.5" stroke="#F5F5F2" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M148 36V19.5C148 19.5 160.402 19.5 163 19.5C165.598 19.5 165.598 21.9708 165.598 24C165.598 26.0292 165.598 28.5 163 28.5C160.402 28.5 152.5 28.5 152.5 28.5" stroke="#F5F5F2" stroke-width="3"/>
+            <path d="M121 18.5V36" stroke="#F5F5F2" stroke-width="3"/>
+            <path d="M84.3814 14C90.6672 14 95.7629 19.122 95.7629 25.4404C95.7629 28.0346 94.9032 30.4267 93.4554 32.3458L91.3015 30.0455C92.1725 28.7257 92.6804 27.1428 92.6804 25.4404C92.6804 20.8333 88.9648 17.0984 84.3814 17.0984C79.798 17.0984 76.0825 20.8333 76.0825 25.4404C76.0825 30.0476 79.798 33.7824 84.3814 33.7824C84.954 33.7824 85.5129 33.7239 86.0528 33.6129L88.3614 36.1609C87.1225 36.6258 85.7817 36.8808 84.3814 36.8808C78.0956 36.8808 73 31.7588 73 25.4404C73 19.122 78.0956 14 84.3814 14Z" fill="#F5F5F2"/>
+            <path d="M89.2423 29.8497H84.2629L90.9021 37H96L89.2423 29.8497Z" fill="#F5F5F2"/>
+            <path d="M84.3814 14C90.6672 14 95.7629 19.122 95.7629 25.4404C95.7629 28.0346 94.9032 30.4267 93.4554 32.3458L91.3015 30.0455C92.1725 28.7257 92.6804 27.1428 92.6804 25.4404C92.6804 20.8333 88.9648 17.0984 84.3814 17.0984C79.798 17.0984 76.0825 20.8333 76.0825 25.4404C76.0825 30.0476 79.798 33.7824 84.3814 33.7824C84.954 33.7824 85.5129 33.7239 86.0528 33.6129L88.3614 36.1609C87.1225 36.6258 85.7817 36.8808 84.3814 36.8808C78.0956 36.8808 73 31.7588 73 25.4404C73 19.122 78.0956 14 84.3814 14Z" stroke="#F5F5F2"/>
+            <path d="M89.2423 29.8497H84.2629L90.9021 37H96L89.2423 29.8497Z" stroke="#F5F5F2"/>
+            <path d="M25.2371 0C39.1752 0 50.4742 11.3576 50.4742 25.3679C50.4742 31.1203 48.5679 36.4243 45.3577 40.6798L40.5816 35.5791C42.5129 32.6527 43.6392 29.1428 43.6392 25.3679C43.6392 15.152 35.4003 6.87047 25.2371 6.87047C15.0739 6.87047 6.83505 15.152 6.83505 25.3679C6.83505 35.5837 15.0739 43.8653 25.2371 43.8653C26.5066 43.8653 27.746 43.7356 28.9432 43.4896L34.0623 49.1394C31.3151 50.1704 28.3419 50.7358 25.2371 50.7358C11.299 50.7358 0 39.3782 0 25.3679C0 11.3576 11.299 0 25.2371 0Z" fill="#F5F5F2"/>
+            <path d="M36.0155 35.1451H24.9742L39.6959 51H51L36.0155 35.1451Z" fill="#F5F5F2"/>
+          </svg>
+        </a>
+        <p class="mt-3 font-mono text-body-sm text-ivory/60 tracking-[0.04em] flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-signal" aria-hidden="true"></span><span data-i18n="footer.tagline">Connecting Intelligence.</span></p>
+      </div>
+
+      <nav aria-label="Footer" class="flex flex-wrap gap-x-10 gap-y-4 text-body-sm">
+        <a href="/index.html#services" class="text-ivory/80 hover:text-signal transition-colors duration-base nav-link" data-i18n="nav.services">Services</a>
+        <a href="/index.html#why-qipuz" class="text-ivory/80 hover:text-signal transition-colors duration-base nav-link" data-i18n="nav.whyQipuz">Why QIPUZ</a>
+        <a href="/portfolio.html" class="text-ivory/80 hover:text-signal transition-colors duration-base nav-link" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="/index.html#contact" class="text-ivory/80 hover:text-signal transition-colors duration-base nav-link" data-i18n="nav.contact">Contact</a>
+      </nav>
+    </div>
+
+    <div class="mt-14 pt-8 border-t border-obsidian-60 flex flex-col sm:flex-row justify-between gap-4 text-body-sm text-obsidian-40">
+      <p data-i18n="footer.copyright">© 2026 QIPUZ. All rights reserved.</p>
+      <p class="font-mono text-label uppercase tracking-[0.08em]" data-i18n="footer.label">AI Engineering Company</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu
+  (function () {
+    var toggle = document.getElementById('menu-toggle');
+    var menu = document.getElementById('mobile-menu');
+    var iconOpen = document.getElementById('menu-icon-open');
+    var iconClose = document.getElementById('menu-icon-close');
+
+    function closeMenu() {
+      menu.classList.add('hidden');
+      toggle.setAttribute('aria-expanded', 'false');
+      iconOpen.classList.remove('hidden');
+      iconClose.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+    function openMenu() {
+      menu.classList.remove('hidden');
+      toggle.setAttribute('aria-expanded', 'true');
+      iconOpen.classList.add('hidden');
+      iconClose.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+    toggle.addEventListener('click', function () {
+      var expanded = toggle.getAttribute('aria-expanded') === 'true';
+      expanded ? closeMenu() : openMenu();
+    });
+    menu.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', closeMenu);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeMenu();
+    });
+  })();
+
+  // Header scroll + dark-section awareness
+  (function () {
+    var header = document.getElementById('site-header');
+    function onScroll() {
+      if (window.scrollY > 24) header.classList.add('is-scrolled');
+      else header.classList.remove('is-scrolled');
+    }
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    var darkSections = document.querySelectorAll('footer, section.bg-obsidian');
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        header.classList.toggle('is-dark', entry.isIntersecting);
+      });
+    }, { rootMargin: '-88px 0px -88% 0px', threshold: 0 });
+    darkSections.forEach(function (el) { io.observe(el); });
+  })();
+
+  // Scroll reveals — fire once, then stay visible.
+  (function () {
+    var items = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) {
+      items.forEach(function (el) { el.classList.add('is-visible'); });
+      return;
+    }
+
+    var io = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    items.forEach(function (el) { io.observe(el); });
+  })();
+</script>
+
+</body>
+</html>
