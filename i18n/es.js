@@ -246,6 +246,20 @@ window.i18nStrings.es = {
       painPoint:   'Publicar en LinkedIn cada semana implica investigar, escribir y conseguir o crear una imagen, además de todo lo que ya está en la agenda.',
       system:      'Un flujo que redacta un artículo y una imagen de portada para un tema seleccionado, y lo deja en espera de revisión antes de publicar nada.',
       description: 'Se elige un tema y se revisa el borrador. Una vez aprobado, el flujo publica el post directamente en LinkedIn, sin copiar y pegar manualmente.',
+      modal: {
+        painPoint: {
+          headline: 'Para algunos, publicar en redes sociales es algo natural: una idea rápida, un post rápido, listo.',
+          body: '<p>Pero para los profesionales es otra cosa completamente distinta. Una publicación de LinkedIn no es solo contenido. Es un reflejo de la experiencia, la credibilidad y la construcción de relaciones con clientes, colegas y la comunidad. Tiene que decir algo que valga la pena leer, verse lo suficientemente pulida para tomarse en serio, y publicarse en el momento correcto.</p><p>Ahí es donde se complica. Escribir una publicación que realmente conecte, no genérica, no olvidable, toma un tiempo que la mayoría de los profesionales no tiene entre reuniones, proyectos y todo lo demás en su agenda. Y una buena publicación no son solo palabras; necesita una imagen relevante que detenga el scroll y refuerce el mensaje. Para cuando ambas cosas están listas, el momento de publicar muchas veces ya pasó, o todo se pospone para "después" y nunca sucede.</p><p>El resultado: información valiosa se queda en la cabeza de alguien en lugar de llegar a la audiencia que necesita verla.</p>',
+        },
+        system: {
+          headline: 'El Generador de Publicaciones de LinkedIn convierte todo ese proceso en algo rápido, profesional y sin preocupaciones.',
+          body: '<p>En lugar de quedarse mirando una casilla de publicación en blanco buscando las palabras correctas, el flujo genera una publicación estilo artículo bien elaborada, junto con una imagen relevante y con identidad de marca, pensada para conectar realmente con la audiencia del profesional, no solo para llenar espacio.</p><p>Pero la velocidad no significa perder el control. Antes de que algo se publique, el usuario lo revisa y lo aprueba, así que lo que se publica es siempre exactamente lo que quiere que su red vea. Es creación de contenido profesional y publicación segura, con un clic, trabajando juntas.</p>',
+        },
+        description: {
+          headline: 'El usuario simplemente indica sobre qué quiere publicar, y el flujo se encarga del resto.',
+          body: '<p>Escribe un artículo pulido y profesional, adaptado al formato de LinkedIn, y lo acompaña con una imagen relevante que refuerza el mensaje visualmente.</p><p>Una vez listo, el usuario lo revisa. Nada se publica sin su aprobación, lo que le da control total y confianza sobre lo que lo representa públicamente. Una vez aprobado, la publicación sale al aire de forma rápida y segura: sin aplicaciones adicionales, sin dar formato a mano, sin correr de último momento a buscar una imagen.</p><p>Lo que antes ocupaba toda una tarde: escribir, editar, buscar una imagen, dudar de las palabras, ahora toma minutos. El profesional se mantiene visible, consistente y conectado con su comunidad y sus clientes, sin que crear contenido se convierta en otro trabajo encima de su trabajo.</p><p>Esa es la verdadera ganancia: mostrarse en LinkedIn como lo hacen los mejores profesionales, sin el costo de tiempo que normalmente se los impide.</p>',
+        },
+      },
     },
     cta: {
       eyebrow: '¿Tienes un Problema Similar?',

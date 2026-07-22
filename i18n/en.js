@@ -247,6 +247,20 @@ window.i18nStrings.en = {
       painPoint:   'Posting on LinkedIn every week takes research, writing, and finding or making an image, on top of whatever else is already on the schedule.',
       system:      'A pipeline that drafts an article and a header image for a topic someone selects, then holds it for review before anything goes out.',
       description: 'Pick a topic and review the draft. Once approved, the workflow publishes the post to LinkedIn directly, no manual copy-pasting.',
+      modal: {
+        painPoint: {
+          headline: 'For some, posting on social media is second nature: a quick thought, a quick share, done.',
+          body: '<p>But for professionals, it\'s something else entirely. A LinkedIn post isn\'t just content. It\'s a reflection of expertise, credibility, and relationship-building with clients, colleagues, and community. It has to say something worth reading, look polished enough to be taken seriously, and land at the right moment.</p><p>That\'s where things get hard. Writing a post that actually resonates, not generic, not forgettable, takes time most professionals don\'t have between meetings, projects, and everything else on their plate. And a great post isn\'t just words; it needs a relevant image to stop the scroll and support the message. By the time both are ready, the moment to post has often passed, or the whole thing gets pushed to "later" and never happens.</p><p>The result: valuable insight stays in someone\'s head instead of in front of the audience that needs to see it.</p>',
+        },
+        system: {
+          headline: 'The LinkedIn Post Generator turns that entire process into something fast, professional, and worry-free.',
+          body: '<p>Instead of staring at a blank post box trying to find the right words, the workflow generates a well-crafted article-style post paired with a relevant, on-brand image, built to actually resonate with the professional\'s audience, not just fill space.</p><p>But speed doesn\'t mean losing control. Before anything goes live, the user reviews and approves it, so what gets published is always exactly what they want their network to see. It\'s professional content creation and secure, one-click publishing, working together.</p>',
+        },
+        description: {
+          headline: 'The user simply signals what they want to post about, and the workflow takes it from there.',
+          body: '<p>It writes a polished, professional article suited for LinkedIn\'s format and pairs it with a relevant image that supports the message visually.</p><p>Once it\'s ready, the user reviews it. Nothing publishes without their approval, giving them full confidence and control over what represents them publicly. Once approved, the post goes live quickly and securely: no extra apps, no manual formatting, no last-minute scrambling to find an image.</p><p>What used to take up an entire block of someone\'s afternoon: writing, editing, sourcing an image, second-guessing the wording, now takes minutes. The professional stays visible, stays consistent, and stays connected with their community and clients, without content creation becoming another job on top of their job.</p><p>That\'s the real win: showing up on LinkedIn the way top professionals do, without the time cost that usually stops them.</p>',
+        },
+      },
     },
     cta: {
       eyebrow: 'Have a Similar Problem?',
