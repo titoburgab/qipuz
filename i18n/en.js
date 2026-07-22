@@ -227,6 +227,20 @@ window.i18nStrings.en = {
       painPoint:   'Producing a script for TV, radio, and social media means writing the same story three separate times, in whatever format each platform expects, sometimes in two languages.',
       system:      'A generator that takes one brief and produces scripts formatted for TV, radio, or social media, in English or Spanish.',
       description: 'Enter the topic once and choose the formats needed. The workflow returns one script per format, ready to record or post.',
+      modal: {
+        painPoint: {
+          headline: 'Every producer in TV, radio, and digital media eventually runs into the same job: write the script that sells.',
+          body: '<p>Whether it\'s a motorcycle dealership, a bookstore, a restaurant, or an image campaign for a brand trying to reposition itself, someone has to turn a product or a message into words that work on air, on screen, or on a feed.</p><p>That\'s harder than it sounds. A script isn\'t just writing: it\'s writing that has to fit a format, hit a runtime, match the tone of the market it\'s airing in, and still sound like the client, not like a generic ad. Producers end up doing research on top of writing: studying the client\'s brand voice, understanding what resonates in that specific market, adjusting for language and cultural nuance, and then rewriting the same core message in multiple lengths for different platforms.</p><p>It\'s a lot of moving parts for something that, on a busy production day, might need to happen five times before lunch.</p>',
+        },
+        system: {
+          headline: 'The Script Generator takes that entire process and compresses it into something fast, informed, and ready to use.',
+          body: '<p>Instead of starting from a blank page, the producer gets a workflow that does the groundwork first: researching the market the script needs to speak to and pulling insight straight from the client\'s own website to understand their voice, tone, and brand identity. From there, it writes. Not a generic template, but a script shaped around what that specific market expects and what that specific client sounds like.</p><p>And because production doesn\'t happen in just one format, the system generates scripts built for Radio, TV, and social media, in the lengths each platform actually needs, with full support for Spanish, meeting the demands of one of the fastest-growing markets in media without adding a second workflow or a translation step.</p>',
+        },
+        description: {
+          headline: 'The producer gives the workflow the essentials, and the system takes it from there.',
+          body: '<p>It researches the client\'s website to understand their brand voice and researches the market to understand tone, language, and what actually connects with that audience. Then it writes the script, or scripts, tailored to the platform: a punchy 15-second social cut, a 30-second radio spot, a longer TV narrative, all pulling from the same brand-accurate foundation. Need it in Spanish? It\'s built in, not bolted on.</p><p>What used to take hours of research and multiple rewrites now takes minutes. The producer isn\'t starting from zero and isn\'t guessing at tone. They\'re reviewing a script that already sounds like the brand and already fits the market, ready to move straight into production.</p><p>That\'s the real value: less time writing to figure it out, more time producing something that sells.</p>',
+        },
+      },
     },
     project5: {
       title:       'LinkedIn Post Generator',

@@ -226,6 +226,20 @@ window.i18nStrings.es = {
       painPoint:   'Producir un guion para TV, radio y redes sociales significa escribir la misma historia tres veces, en el formato que exige cada plataforma, a veces en dos idiomas.',
       system:      'Un generador que toma un solo brief y produce guiones con el formato de TV, radio o redes sociales, en inglés o español.',
       description: 'Se ingresa el tema una vez y se eligen los formatos necesarios. El flujo entrega un guion por formato, listo para grabar o publicar.',
+      modal: {
+        painPoint: {
+          headline: 'Todo productor en TV, radio y medios digitales tarde o temprano se enfrenta al mismo trabajo: escribir el guion que vende.',
+          body: '<p>Ya sea una concesionaria de motos, una librería, un restaurante o una campaña de imagen para una marca que busca reposicionarse, alguien tiene que convertir un producto o un mensaje en palabras que funcionen al aire, en pantalla o en un feed.</p><p>Eso es más difícil de lo que parece. Un guion no es solo escribir: es escribir algo que debe ajustarse a un formato, cumplir con una duración, coincidir con el tono del mercado en el que se transmite, y aun así sonar como el cliente, no como un anuncio genérico. Los productores terminan investigando además de escribir: estudiando la voz de marca del cliente, entendiendo qué resuena en ese mercado específico, ajustando por idioma y matices culturales, y luego reescribiendo el mismo mensaje central en varias duraciones para distintas plataformas.</p><p>Son muchas piezas en movimiento para algo que, en un día de producción ocupado, puede tener que hacerse cinco veces antes del almuerzo.</p>',
+        },
+        system: {
+          headline: 'El Generador de Guiones toma todo ese proceso y lo comprime en algo rápido, informado y listo para usar.',
+          body: '<p>En lugar de empezar desde una página en blanco, el productor recibe un flujo que hace el trabajo de base primero: investiga el mercado al que el guion debe hablarle y extrae información directamente del sitio web del cliente para entender su voz, tono e identidad de marca. A partir de ahí, escribe. No una plantilla genérica, sino un guion construido según lo que ese mercado específico espera y cómo suena ese cliente específico.</p><p>Y como la producción no ocurre en un solo formato, el sistema genera guiones para Radio, TV y redes sociales, en las duraciones que cada plataforma realmente necesita, con soporte completo para español, atendiendo a uno de los mercados de medios de más rápido crecimiento sin agregar un segundo flujo ni un paso de traducción.</p>',
+        },
+        description: {
+          headline: 'El productor le da al flujo lo esencial, y el sistema se encarga del resto.',
+          body: '<p>Investiga el sitio web del cliente para entender su voz de marca e investiga el mercado para entender el tono, el idioma y qué conecta realmente con esa audiencia. Luego escribe el guion, o los guiones, adaptados a la plataforma: un corte social de 15 segundos con gancho, un spot de radio de 30 segundos, una narrativa más larga para TV, todos partiendo de la misma base fiel a la marca. ¿Lo necesitas en español? Viene incluido, no es un agregado.</p><p>Lo que antes tomaba horas de investigación y varias reescrituras ahora toma minutos. El productor no empieza de cero ni adivina el tono. Está revisando un guion que ya suena como la marca y que ya se ajusta al mercado, listo para pasar directo a producción.</p><p>Ese es el verdadero valor: menos tiempo escribiendo para descifrarlo, más tiempo produciendo algo que vende.</p>',
+        },
+      },
     },
     project5: {
       title:       'Generador de Publicaciones de LinkedIn',
