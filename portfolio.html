@@ -352,7 +352,7 @@
         <article class="reveal service-card relative lg:col-span-6 bg-ivory border border-ivory-80 rounded-lg shadow-card hover:shadow-card-hover overflow-hidden">
           <button type="button" class="absolute inset-0 z-10 rounded-lg" aria-labelledby="card-title-2" data-modal-target="2"></button>
           <div class="relative aspect-[16/10] bg-obsidian-80" aria-hidden="true">
-            <img src="https://placehold.co/800x500/1A1A1A/F5F5F2?text=Quote+%26+Invoice" alt="" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+            <img src="/brand_assets/assets/quote-invoice-01.png" alt="" class="absolute inset-0 w-full h-full object-cover object-top" loading="lazy">
             <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/0 to-transparent"></div>
             <div class="absolute inset-0 bg-signal/10 mix-blend-multiply"></div>
           </div>
@@ -600,10 +600,9 @@
 
       <!-- 02 Quote & Invoice Generator -->
       <div class="modal-project hidden" data-modal-project="2">
-        <div class="relative aspect-[16/9] rounded-t-lg overflow-hidden bg-obsidian-80" aria-hidden="true">
-          <img src="https://placehold.co/960x540/1A1A1A/F5F5F2?text=Quote+%26+Invoice" alt="" class="absolute inset-0 w-full h-full object-cover">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/0 to-transparent"></div>
-          <div class="absolute inset-0 bg-signal/10 mix-blend-multiply"></div>
+        <div class="grid grid-cols-2 gap-px items-start bg-obsidian-60 rounded-t-lg overflow-hidden" aria-hidden="true">
+          <img src="/brand_assets/assets/quote-invoice-01.png" alt="" class="block w-full h-auto">
+          <img src="/brand_assets/assets/quote-invoice-02.png" alt="" class="block w-full h-auto">
         </div>
         <div class="p-8 md:p-12">
           <p class="font-mono text-label text-obsidian-40">02</p>
@@ -611,17 +610,20 @@
 
           <div class="mt-8">
             <p class="font-mono text-label uppercase tracking-[0.12em] text-signal" data-i18n="portfolio.labels.painPoint">Pain Point</p>
-            <p class="mt-3 text-body-md" style="color:#3a3a3a;" data-i18n="portfolio.project2.painPoint">Putting together a quote or invoice for every new request means re-typing the same line items, pricing, and terms by hand, and one wrong number holds up payment.</p>
+            <h4 class="mt-2 font-display text-heading-sm font-medium text-obsidian" data-i18n="portfolio.project2.modal.painPoint.headline">Getting paid should be simple. In practice, it's anything but.</h4>
+            <div class="mt-3 text-body-md space-y-3" style="color:#3a3a3a;" data-i18n-html="portfolio.project2.modal.painPoint.body"></div>
           </div>
 
           <div class="mt-8">
             <p class="font-mono text-label uppercase tracking-[0.12em] text-signal" data-i18n="portfolio.labels.system">System</p>
-            <p class="mt-3 text-body-md" style="color:#3a3a3a;" data-i18n="portfolio.project2.system">A workflow that takes the job details someone enters into a form and turns them into a formatted quote or invoice automatically.</p>
+            <h4 class="mt-2 font-display text-heading-sm font-medium text-obsidian" data-i18n="portfolio.project2.modal.system.headline">This is where the Quote & Invoice Generator changes the equation.</h4>
+            <div class="mt-3 text-body-md space-y-3" style="color:#3a3a3a;" data-i18n-html="portfolio.project2.modal.system.body"></div>
           </div>
 
           <div class="mt-8">
             <p class="font-mono text-label uppercase tracking-[0.12em] text-signal" data-i18n="portfolio.labels.description">What It Does</p>
-            <p class="mt-3 text-body-md" style="color:#3a3a3a;" data-i18n="portfolio.project2.description">Fill in the line items once. The workflow builds the document, applies the right pricing and terms, and sends it straight to the client.</p>
+            <h4 class="mt-2 font-display text-heading-sm font-medium text-obsidian" data-i18n="portfolio.project2.modal.description.headline">The entire process, from raw job details to a client's inbox, happens in one smooth flow.</h4>
+            <div class="mt-3 text-body-md space-y-3" style="color:#3a3a3a;" data-i18n-html="portfolio.project2.modal.description.body"></div>
           </div>
         </div>
       </div>

@@ -186,6 +186,20 @@ window.i18nStrings.es = {
       painPoint:   'Armar una cotización o factura para cada solicitud implica volver a escribir a mano los mismos ítems, precios y términos, y un solo número equivocado detiene el pago.',
       system:      'Un flujo de trabajo que toma los detalles que alguien ingresa en un formulario y los convierte automáticamente en una cotización o factura con el formato correcto.',
       description: 'Se ingresan los ítems una sola vez. El flujo arma el documento, aplica los precios y términos correctos, y lo envía directamente al cliente.',
+      modal: {
+        painPoint: {
+          headline: 'Cobrar debería ser simple. En la práctica, no lo es.',
+          body: '<p>Todo negocio, desde un freelancer independiente hasta una agencia en crecimiento, choca con el mismo obstáculo al final de un proyecto: alguien tiene que sentarse a convertir el trabajo en una cotización o una factura. Eso significa revisar las horas registradas, calcular los costos de mano de obra, verificar dos veces los cálculos para no cobrar de más ni de menos, darle un formato profesional, y luego escribir un correo que no suene como si se hubiera armado en cinco minutos.</p><p>Es tedioso. Es repetitivo. Y sucede una y otra vez, con cada cliente, con cada proyecto. Multiplica eso por un mes ocupado y tienes horas de trabajo administrativo que no tienen nada que ver con el oficio real, horas que podrían haberse dedicado al próximo proyecto, al próximo cliente, al próximo logro. Peor aún, cuando este proceso se hace con prisa, aparecen los errores: totales equivocados, ítems faltantes, facturas que salen tarde, todo lo cual puede retrasar el pago o hacer que un negocio se vea menos profesional de lo que realmente es.</p><p>El verdadero costo no es solo el tiempo. Es el impulso.</p>',
+        },
+        system: {
+          headline: 'Aquí es donde el Generador de Cotizaciones y Facturas cambia la ecuación.',
+          body: '<p>En lugar de reconstruir manualmente una cotización o factura desde cero cada vez, este flujo de trabajo elimina por completo las partes repetitivas. Ingresas los detalles una sola vez, el trabajo, las horas, la tarifa, el cliente, y el sistema se encarga del resto: calcula los totales, aplica el formato correcto, y arma todo en un documento que parece salido de un estudio profesional, porque así fue.</p><p>No se trata solo de ahorrar tiempo, aunque eso es gran parte del beneficio. Se trata de consistencia. Cada cotización y factura sigue la misma estructura limpia y con identidad de marca. Cada cálculo es preciso. Cada correo que se envía se lee como si lo hubiera escrito alguien que tiene su negocio completamente organizado, porque ahora, lo tiene.</p><p>Piénsalo como un asistente detrás de escena que nunca se cansa, nunca comete un error de cálculo, y nunca olvida un paso.</p>',
+        },
+        description: {
+          headline: 'Todo el proceso, desde los detalles del trabajo hasta la bandeja de entrada del cliente, ocurre en un solo flujo.',
+          body: '<p>Completa lo esencial: horas trabajadas, tarifa por hora, alcance del proyecto, información del cliente, y el flujo se encarga del resto. Calcula automáticamente el costo total, considerando cada variable ingresada, y arma una cotización o factura limpia y profesional a partir de eso. Sin dar formato desde cero. Sin fórmulas que verificar. Sin un correo en blanco esperando ser escrito.</p><p>Luego va un paso más allá: redacta un correo pulido y listo para el cliente, adjunta el documento terminado, y lo envía, de forma puntual y consistente, cada vez.</p><p>Lo que antes tomaba entre 30 y 45 minutos de trabajo manual ahora toma unos minutos de datos. Lo que el cliente recibe no es solo un documento, es una señal de que está trabajando con alguien organizado y en control de su negocio. Ese es el cambio que entrega este proyecto: de trabajo administrativo a impulso, de manual a automático, de "ya lo haré después" a "ya está hecho".</p>',
+        },
+      },
     },
     project3: {
       title:       'Generador de Videos Inmobiliarios',

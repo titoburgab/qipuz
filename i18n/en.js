@@ -187,6 +187,20 @@ window.i18nStrings.en = {
       painPoint:   'Putting together a quote or invoice for every new request means re-typing the same line items, pricing, and terms by hand, and one wrong number holds up payment.',
       system:      'A workflow that takes the job details someone enters into a form and turns them into a formatted quote or invoice automatically.',
       description: 'Fill in the line items once. The workflow builds the document, applies the right pricing and terms, and sends it straight to the client.',
+      modal: {
+        painPoint: {
+          headline: 'Getting paid should be simple. In practice, it\'s anything but.',
+          body: '<p>Every business, from a solo freelancer to a growing agency, runs into the same wall at the end of a project: someone has to sit down and turn the work into a quote or an invoice. That means digging back through hours logged, calculating labor costs, double-checking the math so nothing\'s over- or under-billed, formatting it so it looks professional, and then writing an email that doesn\'t sound like it was thrown together in five minutes.</p><p>It\'s tedious. It\'s repetitive. And it happens over and over, for every client, every project. Multiply that by a busy month and you\'ve got hours of admin work that has nothing to do with the actual craft, hours that could\'ve gone toward the next project, the next client, the next win. Worse, when this process is rushed, mistakes creep in: wrong totals, missing line items, invoices that go out late, all things that can delay payment or make a business look less polished than it actually is.</p><p>The real cost isn\'t just time. It\'s momentum.</p>',
+        },
+        system: {
+          headline: 'This is where the Quote & Invoice Generator changes the equation.',
+          body: '<p>Instead of manually rebuilding a quote or invoice from scratch every time, this workflow takes the repetitive parts off your plate entirely. You provide the details once, the job, the hours, the rate, the client, and the system handles the rest: calculating totals, applying the right formatting, and packaging everything into a document that looks like it came from a professional studio, because it did.</p><p>It\'s not just about saving time, though that\'s a large part of it. It\'s about consistency. Every quote and invoice follows the same clean, branded structure. Every calculation is accurate. Every email that goes out reads like it was written by someone who has their business fully together, because now, it is.</p><p>Think of it as a behind-the-scenes assistant that never gets tired, never makes a math error, and never forgets a step.</p>',
+        },
+        description: {
+          headline: 'The entire process, from raw job details to a client\'s inbox, happens in one smooth flow.',
+          body: '<p>Fill in the essentials: hours worked, labor rate, project scope, client information, and the workflow takes over from there. It automatically calculates the total cost, factoring in every variable provided, and builds a clean, professional quote or invoice around it. No formatting from scratch. No formulas to double-check. No blank email staring back at you.</p><p>Then it goes one step further: it drafts a polished, client-ready email, attaches the finished document, and sends it, promptly and consistently, every time.</p><p>What used to take 30-45 minutes of manual work now takes a few minutes of input. What clients receive isn\'t just a document, it\'s a signal that they\'re working with someone organized and on top of their business. That\'s the shift this project delivers: from busywork to momentum, from manual to automatic, from "I\'ll get to it later" to "it\'s already done."</p>',
+        },
+      },
     },
     project3: {
       title:       'Real Estate Video Generator',
