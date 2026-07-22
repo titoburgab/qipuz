@@ -206,6 +206,20 @@ window.i18nStrings.es = {
       painPoint:   'Los agentes inmobiliarios contratan un equipo de video para cada propiedad o se saltan el video por completo, porque coordinar una grabación para cada nueva propiedad cuesta más tiempo y dinero de lo que la mayoría de las propiedades justifica.',
       system:      'Un flujo de trabajo que toma los detalles y las fotos que el agente ya tiene y los convierte en un video de recorrido estructurado, sin equipo de grabación ni editor.',
       description: 'El agente ingresa los detalles de la propiedad y sube las fotos una sola vez. El flujo ordena las tomas, agrega la información de la propiedad y entrega un video terminado, listo para descargar.',
+      modal: {
+        painPoint: {
+          headline: 'Todo agente inmobiliario compite contra el mismo reloj.',
+          body: '<p>Mientras más rápido una propiedad llega frente a los compradores, más rápido se vende. Y una de las herramientas más poderosas para lograrlo es el video: es la forma en que los compradores se enamoran de una casa antes de siquiera pisarla.</p><p>Pero el video es también donde los agentes pierden el control de su propio cronograma. En lugar de publicar una propiedad en el momento en que está lista, los agentes tienen que esperar: a que un camarógrafo agende una grabación, a que un editor corte el material, a rondas de idas y vueltas antes de que el video final se apruebe. Lo que debería tomar uno o dos días puede estirarse a una semana o más. Y en bienes raíces, una semana de retraso puede significar una ventana perdida, un mercado que se enfría, o un comprador que encontró otra cosa mientras tanto.</p><p>El agente no está al mando. El cronograma de su propiedad depende de la agenda de alguien más.</p>',
+        },
+        system: {
+          headline: 'El Generador de Videos Inmobiliarios devuelve ese control a donde pertenece: a las manos del agente.',
+          body: '<p>En lugar de coordinar una grabación y esperar a un editor, el agente se convierte en todo el equipo de producción, usando solo su teléfono. Este flujo toma las fotos que de todas formas ya está tomando para la propiedad y las transforma en un video completamente editado y listo para publicar, de forma automática. Sin agendar nada. Sin idas y vueltas. Sin esperar a que un tercero dé luz verde al siguiente paso.</p><p>Y no es un video improvisado o de aspecto casero. Es una pieza editada profesionalmente, construida para cómo los compradores realmente navegan: rápido, visual, y hecha para la web y las redes sociales donde viven y se comparten las propiedades.</p>',
+        },
+        description: {
+          headline: 'El agente recorre la propiedad, toma fotos con su teléfono, y eso es todo.',
+          body: '<p>Sube las fotos que de todas formas iba a tomar, completa algunos datos clave sobre la casa, y su trabajo está hecho.</p><p>A partir de ahí, el flujo se encarga del resto. En un par de minutos, une las fotos en un video pulido y con un ritmo profesional, con transiciones suaves y una estructura pensada para mantener la atención de quien lo ve, listo para publicarse de inmediato en el sitio de la propiedad, la página de la agencia, y cada red social donde los compradores están mirando.</p><p>Lo que antes tomaba días coordinando con un camarógrafo y un editor, ahora toma minutos, de principio a fin, sin depender de la agenda de nadie más. El agente publica más rápido, promociona más rápido, y vende más rápido, porque el mayor obstáculo del proceso simplemente desapareció.</p><p>Esa es la verdadera ganancia: los agentes no solo obtienen un video. Recuperan su tiempo.</p>',
+        },
+      },
     },
     project4: {
       title:       'Generador de Guiones',

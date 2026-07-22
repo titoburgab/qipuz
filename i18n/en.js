@@ -207,6 +207,20 @@ window.i18nStrings.en = {
       painPoint:   'Listing agents either pay for a video crew on every property or skip video entirely, because coordinating a shoot for each new listing costs more time and money than most listings justify.',
       system:      'A workflow that takes the property details and photos an agent already has and assembles them into a structured walkthrough video, no camera crew or editor required.',
       description: 'The agent fills in the property details and uploads photos once. The workflow paces the shots, adds the property information, and returns a finished video ready to download.',
+      modal: {
+        painPoint: {
+          headline: 'Every real estate agent is racing against the same clock.',
+          body: '<p>The faster a property gets in front of buyers, the faster it sells. And one of the most powerful tools for doing that is video: it\'s how potential buyers fall in love with a home before they ever set foot inside.</p><p>But video is also where agents lose control of their own timeline. Instead of listing a property the moment it\'s ready, agents have to wait: on a videographer to schedule a shoot, on an editor to cut the footage, on rounds of back-and-forth before the final video is approved. What should take a day or two can stretch into a week or more. And in real estate, a week of delay can mean a missed window, a cooling market, or a buyer who found something else in the meantime.</p><p>The agent isn\'t in the driver\'s seat. Their listing timeline depends on someone else\'s schedule.</p>',
+        },
+        system: {
+          headline: 'The Real Estate Video Generator puts that control back where it belongs: in the agent\'s hands.',
+          body: '<p>Instead of coordinating a video shoot and waiting on an editor, the agent becomes the entire production team, using nothing but their phone. This workflow takes the photos they\'re already taking for the listing and transforms them into a fully edited, publish-ready video, automatically. No scheduling. No back-and-forth. No waiting on a third party to greenlight the next step.</p><p>It\'s not a stripped-down, DIY-looking video either. It\'s a professionally edited piece built for how buyers actually browse: fast, visual, and made for the web and social feeds where listings live and get shared.</p>',
+        },
+        description: {
+          headline: 'The agent walks through the property, takes pictures with their phone, and that\'s it.',
+          body: '<p>They upload the photos they\'d take anyway, fill in a few key details about the house, and their job is done.</p><p>From there, the workflow takes over. In a couple of minutes, it stitches the photos into a polished, professionally paced video, complete with smooth transitions and a structure built to hold a viewer\'s attention, ready to publish immediately to the listing site, the agency\'s website, and every social platform where buyers are scrolling.</p><p>What used to take days of coordinating with a videographer and editor now takes minutes, start to finish, with zero dependency on anyone else\'s calendar. The agent lists faster, markets faster, and sells faster, because the biggest bottleneck in the process has simply been removed.</p><p>That\'s the real win here: agents don\'t just get a video. They get their timeline back.</p>',
+        },
+      },
     },
     project4: {
       title:       'Script Generator',
